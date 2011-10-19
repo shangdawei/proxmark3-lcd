@@ -1061,9 +1061,9 @@ void Action_Button(void)
       LCDFill(0, 1+8*(curY-1), 6, 8, WHITE );
       LCDFill(0, 1+8* 8, 132, 8, WHITE);
       LCDFill(0, 1+8* 10, 132, 8, WHITE);
-			if(curY<2) curY=5;
+			if(curY<2) curY=6;
 			else curY--;
-      if (curY>3) LCDFill(0, 1+8* 9, 132, 8, WHITE);
+      if (curY>4) LCDFill(0, 1+8* 9, 132, 8, WHITE);
       LCDString("* ",(char *)&FONT6x8,1,1+8*(curY-1),GREEN  ,WHITE );
 			break;
 		// Down
@@ -1072,9 +1072,9 @@ void Action_Button(void)
       LCDFill(0, 1+8*(curY-1), 6, 8, WHITE );
       LCDFill(0, 1+8* 8, 132, 8, WHITE);
       LCDFill(0, 1+8* 10, 132, 8, WHITE);
-			if(curY>4) curY=1;
+			if(curY>5) curY=1;
 			else curY++;
-      if (curY>3) LCDFill(0, 1+8* 9, 132, 8, WHITE);
+      if (curY>4) LCDFill(0, 1+8* 9, 132, 8, WHITE);
       LCDString("* ",(char *)&FONT6x8,1,1+8*(curY-1),GREEN  ,WHITE );
 			break;
 		// Left
