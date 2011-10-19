@@ -1,0 +1,5964 @@
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+amp              Amplify peaks
+askdemod         <0|1> -- Attempt to demodulate simple ASK tags
+autocorr         <window length> -- Autocorrelation over window
+bitsamples       Get raw samples as bitstring
+bitstream        [clock rate] -- Convert waveform into a bitstream
+buffclear        Clear sample buffer and graph window
+dec              Decimate samples
+detectclock      Detect clock rate
+fskdemod         Demodulate graph window as a HID FSK
+grid             <x> <y> -- overlay grid on graph window, use zero value to turn off either
+hexsamples       <blocks> [<offset>] -- Dump big buffer as hex bytes
+hide             Hide graph window
+hpf              Remove DC offset from trace
+load             <filename> -- Load trace (to graph window
+ltrim            <samples> -- Trim samples from left of trace
+mandemod         [i] [clock rate] -- Manchester demodulate binary stream (option 'i' to invert output)
+manmod           [clock rate] -- Manchester modulate a binary stream
+norm             Normalize max/min to +/-500
+plot             Show graph window
+samples          [128 - 16000] -- Get raw samples for graph window
+save             <filename> -- Save trace (from graph window)
+scale            <int> -- Set cursor display scale
+threshold        <threshold> -- Maximize/minimize every value in the graph window depending on threshold
+zerocrossings    Count time between zero-crossings
+help             This help
+detectreader     ['l'|'h'] -- Detect external reader field (option 'l' or 'h' to limit to LF or HF)
+fpgaoff          Set FPGA off
+lcd              <HEX command> <count> -- Send command/data to LCD
+lcdreset         Hardware reset LCD
+readmem          [address] -- Read memory at decimal address from flash
+reset            Reset the Proxmark3
+setlfdivisor     <19 - 255> -- Drive LF antenna at 12Mhz/(divisor+1)
+setmux           <loraw|hiraw|lopkd|hipkd> -- Set the ADC mux to a specific value
+tune             Measure antenna tuning
+version          Show version inforation about the connected Proxmark
+#db# Prox/RFID mark3 RFID instrument       
+#db# bootrom: svn 494-suspect 2011-09-07 07:13:39       
+#db# os: svn 494-suspect 2011-09-07 07:14:09       
+#db# FPGA image built on 2009/12/20 at 22:56:31       
+help             This help
+detectreader     ['l'|'h'] -- Detect external reader field (option 'l' or 'h' to limit to LF or HF)
+fpgaoff          Set FPGA off
+lcd              <HEX command> <count> -- Send command/data to LCD
+lcdreset         Hardware reset LCD
+readmem          [address] -- Read memory at decimal address from flash
+reset            Reset the Proxmark3
+setlfdivisor     <19 - 255> -- Drive LF antenna at 12Mhz/(divisor+1)
+setmux           <loraw|hiraw|lopkd|hipkd> -- Set the ADC mux to a specific value
+tune             Measure antenna tuning
+version          Show version inforation about the connected Proxmark
+#db# Prox/RFID mark3 RFID instrument       
+#db# bootrom: svn 494-suspect 2011-09-10 22:41:28       
+#db# os: svn 494-suspect 2011-09-10 22:41:44       
+#db# FPGA image built on 2009/12/20 at 22:56:31       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+dbg              Set default debug mode
+rdbl             Read MIFARE classic block
+rdsc             Read MIFARE classic sector
+dump1k           Dump MIFARE classic tag to binary file
+restore1k        Restore MIFARE classic binary file to BLANK tag
+wrbl             Write MIFARE classic block
+chk              Test block up to 8 keys
+mifare           Read parity error messages. param - <used card nonce>
+nested           Test nested authentication
+sim              Simulate MIFARE 1k card
+eclr             Clear simulator memory block
+eget             Get simulator memory block
+eset             Set simulator memory block
+eload            Load from file emul dump
+esave            Save to file emul dump
+ecfill           Fill simulator memory with help of keys from simulator
+ekeyprn          Print keys from simulator memory
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  1.84 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is unusable.
+#db# Prox/RFID mark3 RFID instrument       
+#db# bootrom: svn 494-suspect 2011-09-10 22:41:28       
+#db# os: svn 494-suspect 2011-09-10 22:41:44       
+#db# FPGA image built on 2009/12/20 at 22:56:31       
+#db# Prox/RFID mark3 RFID instrument       
+#db# bootrom: svn 494-suspect 2011-09-10 23:23:23       
+#db# os: svn 494-suspect 2011-09-10 23:23:41       
+#db# FPGA image built on 2009/12/20 at 22:56:31       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.37 V @   125.00 kHz
+# LF antenna:  5.37 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  1.84 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is unusable.
+#db# Prox/RFID mark3 RFID instrument       
+#db# bootrom: svn 494-suspect 2011-09-10 23:23:23       
+#db# os: svn 494-suspect 2011-09-10 23:23:41       
+#db# FPGA image built on 2009/12/20 at 22:56:31       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.37 V @   125.00 kHz
+# LF antenna:  5.37 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  2.93 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is marginal.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.37 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  5.54 V @    13.56 MHz
+# Your LF antenna is marginal.
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+list             List ISO 14443a history
+reader           Act like an ISO14443 Type A reader
+sim              <UID> -- Fake ISO 14443a tag
+snoop            Eavesdrop ISO 14443 Type A
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  5.54 V @    13.56 MHz
+# Your LF antenna is marginal.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  6.99 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+iso14443a card select failed
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+help             This help
+help             This help
+help             This help
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+dbg              Set default debug mode
+rdbl             Read MIFARE classic block
+rdsc             Read MIFARE classic sector
+dump1k           Dump MIFARE classic tag to binary file
+restore1k        Restore MIFARE classic binary file to BLANK tag
+wrbl             Write MIFARE classic block
+chk              Test block up to 8 keys
+mifare           Read parity error messages. param - <used card nonce>
+nested           Test nested authentication
+sim              Simulate MIFARE 1k card
+eclr             Clear simulator memory block
+eget             Get simulator memory block
+eset             Set simulator memory block
+eload            Load from file emul dump
+esave            Save to file emul dump
+ecfill           Fill simulator memory with help of keys from simulator
+ekeyprn          Print keys from simulator memory
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  7.15 V @    13.56 MHz
+# Your LF antenna is marginal.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  7.25 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+Usage:
+ all sectors:  hf mf nested  <card memory> <block number> <key A/B> <key (12 hex symbols)> [t,d]
+ one sector:   hf mf nested  o <block number> <key A/B> <key (12 hex symbols)>
+               <target block number> <target key A/B> [t]
+card memory - 0 - MINI(320 bytes), 1 - 1K, 2 - 2K, 4 - 4K, <other> - 1K
+t - transfer keys into emulator memory
+d - write keys to binary file
+ 
+      sample1: hf mf nested 1 0 A FFFFFFFFFFFF 
+      sample1: hf mf nested 1 0 A FFFFFFFFFFFF t 
+      sample1: hf mf nested 1 0 A FFFFFFFFFFFF d 
+      sample2: hf mf nested o 0 A FFFFFFFFFFFF 4 A
+--block no:00 key type:00 key:43 41 4d 49 4e 4f  etrans:0
+Block shift=0
+Testing known keys. Sector count=16
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+nested...
+
+
+#db# Can't select card       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.37 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  6.61 V @    13.56 MHz
+# Your LF antenna is marginal.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  7.67 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+--block no:00 key type:00 key:43 41 4d 49 4e 4f  etrans:0
+Block shift=0
+Testing known keys. Sector count=16
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+nested...
+
+
+#db# Can't select card       
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  3.54 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is marginal.
+#db# Measuring HF antenna, press button to exit       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3544 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3544 mV       
+#db# 3577 mV       
+#db# 3577 mV       
+#db# 3609 mV       
+#db# 3609 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3706 mV       
+#db# 3706 mV       
+#db# 3770 mV       
+#db# 3931 mV       
+#db# 3996 mV       
+#db# 4092 mV       
+#db# 4221 mV       
+#db# 4318 mV       
+#db# 4382 mV       
+#db# 4447 mV       
+#db# 4543 mV       
+#db# 4640 mV       
+#db# 4382 mV       
+#db# 4318 mV       
+#db# 4318 mV       
+#db# 4382 mV       
+#db# 4415 mV       
+#db# 4672 mV       
+#db# 5027 mV       
+#db# 5349 mV       
+#db# 5671 mV       
+#db# 5961 mV       
+#db# 6155 mV       
+#db# 6348 mV       
+#db# 6541 mV       
+#db# 6799 mV       
+#db# 6832 mV       
+#db# 6864 mV       
+#db# 6993 mV       
+#db# 7057 mV       
+#db# 7025 mV       
+#db# 6670 mV       
+#db# 6348 mV       
+#db# 6123 mV       
+#db# 6058 mV       
+#db# 6123 mV       
+#db# 6123 mV       
+#db# 6058 mV       
+#db# 6058 mV       
+#db# 6058 mV       
+#db# 6123 mV       
+#db# 6251 mV       
+#db# 6380 mV       
+#db# 6541 mV       
+#db# 6767 mV       
+#db# 6928 mV       
+#db# 7089 mV       
+#db# 7218 mV       
+#db# 7250 mV       
+#db# 7315 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7315 mV       
+#db# 7315 mV       
+#db# 7315 mV       
+#db# 7315 mV       
+#db# 7283 mV       
+#db# 7315 mV       
+#db# 7283 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7315 mV       
+#db# 7218 mV       
+#db# 7089 mV       
+#db# 6896 mV       
+#db# 6767 mV       
+#db# 6735 mV       
+#db# 6735 mV       
+#db# 6735 mV       
+#db# 6735 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6864 mV       
+#db# 6864 mV       
+#db# 6864 mV       
+#db# 6896 mV       
+#db# 6960 mV       
+#db# 6928 mV       
+#db# 6960 mV       
+#db# 6960 mV       
+#db# 6864 mV       
+#db# 6864 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6832 mV       
+#db# 6832 mV       
+#db# 6896 mV       
+#db# 6896 mV       
+#db# 6864 mV       
+#db# 6832 mV       
+#db# 6799 mV       
+#db# 6735 mV       
+#db# 6670 mV       
+#db# 6638 mV       
+#db# 6670 mV       
+#db# 6735 mV       
+#db# 6703 mV       
+#db# 6606 mV       
+#db# 6574 mV       
+#db# 6574 mV       
+#db# 6541 mV       
+#db# 6509 mV       
+#db# 6509 mV       
+#db# 6509 mV       
+#db# 6509 mV       
+#db# 6509 mV       
+#db# 6574 mV       
+#db# 6606 mV       
+#db# 6703 mV       
+#db# 6832 mV       
+#db# 6735 mV       
+#db# 6735 mV       
+#db# 6574 mV       
+#db# 6348 mV       
+#db# 6316 mV       
+#db# 6284 mV       
+#db# 6219 mV       
+#db# 5961 mV       
+#db# 5865 mV       
+#db# 5929 mV       
+#db# 5961 mV       
+#db# 5961 mV       
+#db# 5961 mV       
+#db# 5961 mV       
+#db# 5961 mV       
+#db# 6058 mV       
+#db# 6123 mV       
+#db# 6284 mV       
+#db# 6541 mV       
+#db# 6638 mV       
+#db# 6703 mV       
+#db# 6767 mV       
+#db# 6928 mV       
+#db# 6993 mV       
+#db# 7025 mV       
+#db# 7057 mV       
+#db# 6993 mV       
+#db# 7122 mV       
+#db# 7089 mV       
+#db# 7025 mV       
+#db# 7154 mV       
+#db# 7154 mV       
+#db# 7122 mV       
+#db# 7122 mV       
+#db# 7154 mV       
+#db# 7186 mV       
+#db# 7154 mV       
+#db# 7250 mV       
+#db# 7315 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7186 mV       
+#db# 6993 mV       
+#db# 6832 mV       
+#db# 6767 mV       
+#db# 6638 mV       
+#db# 6606 mV       
+#db# 6541 mV       
+#db# 6541 mV       
+#db# 6799 mV       
+#db# 7025 mV       
+#db# 7315 mV       
+#db# 7283 mV       
+#db# 7154 mV       
+#db# 6638 mV       
+#db# 6606 mV       
+#db# 6541 mV       
+#db# 6477 mV       
+#db# 6477 mV       
+#db# 6413 mV       
+#db# 6348 mV       
+#db# 6284 mV       
+#db# 6187 mV       
+#db# 6187 mV       
+#db# 6219 mV       
+#db# 6187 mV       
+#db# 6155 mV       
+#db# 6219 mV       
+#db# 6413 mV       
+#db# 6380 mV       
+#db# 6413 mV       
+#db# 6574 mV       
+#db# 6477 mV       
+#db# 6606 mV       
+#db# 6896 mV       
+#db# 6767 mV       
+#db# 6799 mV       
+#db# 7057 mV       
+#db# 7283 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7089 mV       
+#db# 6799 mV       
+#db# 6606 mV       
+#db# 6541 mV       
+#db# 6638 mV       
+#db# 6735 mV       
+#db# 6574 mV       
+#db# 6670 mV       
+#db# 6735 mV       
+#db# 6767 mV       
+#db# 7057 mV       
+#db# 7218 mV       
+#db# 7186 mV       
+#db# 7347 mV       
+#db# 7476 mV       
+#db# 7637 mV       
+#db# 7895 mV       
+#db# 7992 mV       
+#db# 8056 mV       
+#db# 8056 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 8024 mV       
+#db# 7863 mV       
+#db# 7766 mV       
+#db# 7637 mV       
+#db# 7508 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7508 mV       
+#db# 7508 mV       
+#db# 7508 mV       
+#db# 7476 mV       
+#db# 7444 mV       
+#db# 7412 mV       
+#db# 7347 mV       
+#db# 7283 mV       
+#db# 7250 mV       
+#db# 7218 mV       
+#db# 7154 mV       
+#db# 7122 mV       
+#db# 7218 mV       
+#db# 7476 mV       
+#db# 7250 mV       
+#db# 7250 mV       
+#db# 7283 mV       
+#db# 7186 mV       
+#db# 7218 mV       
+#db# 7315 mV       
+#db# 7379 mV       
+#db# 7283 mV       
+#db# 7122 mV       
+#db# 7186 mV       
+#db# 7347 mV       
+#db# 7476 mV       
+#db# 7508 mV       
+#db# 7702 mV       
+#db# 7734 mV       
+#db# 7605 mV       
+#db# 7573 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7637 mV       
+#db# 7541 mV       
+#db# 7541 mV       
+#db# 7734 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7734 mV       
+#db# 7637 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7895 mV       
+#db# 8185 mV       
+#db# 8282 mV       
+#db# 8507 mV       
+#db# 8636 mV       
+#db# 8733 mV       
+#db# 8797 mV       
+#db# 8926 mV       
+#db# 8991 mV       
+#db# 8991 mV       
+#db# 9023 mV       
+#db# 8991 mV       
+#db# 9023 mV       
+#db# 8958 mV       
+#db# 8604 mV       
+#db# 8282 mV       
+#db# 7927 mV       
+#db# 7831 mV       
+#db# 7798 mV       
+#db# 7798 mV       
+#db# 7798 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8185 mV       
+#db# 8411 mV       
+#db# 8733 mV       
+#db# 8830 mV       
+#db# 8926 mV       
+#db# 8926 mV       
+#db# 8926 mV       
+#db# 8926 mV       
+#db# 8926 mV       
+#db# 8862 mV       
+#db# 8636 mV       
+#db# 8282 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7766 mV       
+#db# 7734 mV       
+#db# 7798 mV       
+#db# 7863 mV       
+#db# 8056 mV       
+#db# 8185 mV       
+#db# 8507 mV       
+#db# 8540 mV       
+#db# 8443 mV       
+#db# 8346 mV       
+#db# 8314 mV       
+#db# 8250 mV       
+#db# 8121 mV       
+#db# 8282 mV       
+#db# 8443 mV       
+#db# 8701 mV       
+#db# 8830 mV       
+#db# 8862 mV       
+#db# 8733 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8797 mV       
+#db# 8636 mV       
+#db# 8443 mV       
+#db# 8314 mV       
+#db# 8282 mV       
+#db# 8282 mV       
+#db# 8604 mV       
+#db# 8765 mV       
+#db# 8926 mV       
+#db# 8958 mV       
+#db# 8862 mV       
+#db# 8830 mV       
+#db# 8733 mV       
+#db# 8733 mV       
+#db# 8604 mV       
+#db# 8443 mV       
+#db# 8411 mV       
+#db# 8507 mV       
+#db# 8668 mV       
+#db# 8636 mV       
+#db# 8507 mV       
+#db# 8411 mV       
+#db# 8250 mV       
+#db# 8056 mV       
+#db# 7992 mV       
+#db# 8088 mV       
+#db# 8056 mV       
+#db# 7702 mV       
+#db# 7541 mV       
+#db# 7541 mV       
+#db# 7766 mV       
+#db# 7895 mV       
+#db# 8185 mV       
+#db# 8250 mV       
+#db# 8185 mV       
+#db# 8153 mV       
+#db# 8056 mV       
+#db# 7927 mV       
+#db# 7798 mV       
+#db# 7734 mV       
+#db# 7605 mV       
+#db# 7476 mV       
+#db# 7412 mV       
+#db# 7412 mV       
+#db# 7412 mV       
+#db# 7218 mV       
+#db# 7057 mV       
+#db# 7218 mV       
+#db# 7186 mV       
+#db# 7025 mV       
+#db# 6960 mV       
+#db# 6960 mV       
+#db# 7057 mV       
+#db# 6993 mV       
+#db# 7250 mV       
+#db# 7379 mV       
+#db# 7412 mV       
+#db# 7250 mV       
+#db# 7379 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7541 mV       
+#db# 7766 mV       
+#db# 7831 mV       
+#db# 7863 mV       
+#db# 7766 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7669 mV       
+#db# 7541 mV       
+#db# 7444 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7186 mV       
+#db# 6960 mV       
+#db# 6993 mV       
+#db# 7186 mV       
+#db# 6864 mV       
+#db# 6767 mV       
+#db# 6767 mV       
+#db# 6541 mV       
+#db# 6477 mV       
+#db# 6413 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6477 mV       
+#db# 6735 mV       
+#db# 6864 mV       
+#db# 7250 mV       
+#db# 7573 mV       
+#db# 7573 mV       
+#db# 7573 mV       
+#db# 7637 mV       
+#db# 7863 mV       
+#db# 8088 mV       
+#db# 8121 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7895 mV       
+#db# 7992 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7927 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 7895 mV       
+#db# 7766 mV       
+#db# 7669 mV       
+#db# 7573 mV       
+#db# 7315 mV       
+#db# 7315 mV       
+#db# 7605 mV       
+#db# 7637 mV       
+#db# 7412 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7379 mV       
+#db# 7379 mV       
+#db# 7283 mV       
+#db# 7315 mV       
+#db# 7315 mV       
+#db# 7347 mV       
+#db# 7379 mV       
+#db# 7412 mV       
+#db# 7444 mV       
+#db# 7476 mV       
+#db# 7508 mV       
+#db# 7476 mV       
+#db# 7379 mV       
+#db# 7283 mV       
+#db# 7057 mV       
+#db# 6864 mV       
+#db# 6896 mV       
+#db# 7347 mV       
+#db# 7412 mV       
+#db# 7250 mV       
+#db# 7154 mV       
+#db# 7122 mV       
+#db# 7089 mV       
+#db# 7057 mV       
+#db# 7025 mV       
+#db# 7025 mV       
+#db# 7025 mV       
+#db# 7057 mV       
+#db# 7057 mV       
+#db# 7025 mV       
+#db# 7025 mV       
+#db# 7025 mV       
+#db# 7057 mV       
+#db# 7057 mV       
+#db# 7025 mV       
+#db# 7057 mV       
+#db# 7057 mV       
+#db# 7089 mV       
+#db# 7122 mV       
+#db# 7122 mV       
+#db# 7154 mV       
+#db# 7122 mV       
+#db# 7122 mV       
+#db# 7154 mV       
+#db# 7154 mV       
+#db# 7154 mV       
+#db# 7154 mV       
+#db# 7154 mV       
+#db# 7250 mV       
+#db# 7476 mV       
+#db# 7444 mV       
+#db# 7476 mV       
+#db# 7476 mV       
+#db# 7605 mV       
+#db# 7766 mV       
+#db# 8024 mV       
+#db# 8250 mV       
+#db# 8443 mV       
+#db# 8572 mV       
+#db# 8636 mV       
+#db# 8668 mV       
+#db# 8475 mV       
+#db# 8024 mV       
+#db# 7734 mV       
+#db# 7702 mV       
+#db# 7669 mV       
+#db# 7573 mV       
+#db# 7573 mV       
+#db# 7605 mV       
+#db# 7734 mV       
+#db# 7863 mV       
+#db# 7927 mV       
+#db# 8088 mV       
+#db# 8346 mV       
+#db# 8475 mV       
+#db# 8540 mV       
+#db# 8604 mV       
+#db# 8636 mV       
+#db# 8668 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8668 mV       
+#db# 8668 mV       
+#db# 8668 mV       
+#db# 8668 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8701 mV       
+#db# 8636 mV       
+#db# 8572 mV       
+#db# 8636 mV       
+#db# 8668 mV       
+#db# 8636 mV       
+#db# 8636 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8540 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8540 mV       
+#db# 8507 mV       
+#db# 8443 mV       
+#db# 8443 mV       
+#db# 8572 mV       
+#db# 8604 mV       
+#db# 8443 mV       
+#db# 8250 mV       
+#db# 8121 mV       
+#db# 8088 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7798 mV       
+#db# 7766 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7766 mV       
+#db# 7831 mV       
+#db# 7895 mV       
+#db# 7992 mV       
+#db# 8153 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8282 mV       
+#db# 8346 mV       
+#db# 8411 mV       
+#db# 8443 mV       
+#db# 8443 mV       
+#db# 8411 mV       
+#db# 8411 mV       
+#db# 8217 mV       
+#db# 7992 mV       
+#db# 7702 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7798 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7766 mV       
+#db# 7895 mV       
+#db# 7959 mV       
+#db# 8024 mV       
+#db# 8056 mV       
+#db# 8153 mV       
+#db# 8088 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7959 mV       
+#db# 7863 mV       
+#db# 7734 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7637 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7702 mV       
+#db# 7895 mV       
+#db# 8088 mV       
+#db# 8185 mV       
+#db# 8250 mV       
+#db# 8314 mV       
+#db# 8443 mV       
+#db# 8507 mV       
+#db# 8475 mV       
+#db# 8475 mV       
+#db# 8411 mV       
+#db# 8411 mV       
+#db# 8314 mV       
+#db# 8088 mV       
+#db# 8185 mV       
+#db# 8507 mV       
+#db# 8314 mV       
+#db# 8088 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7895 mV       
+#db# 7831 mV       
+#db# 7798 mV       
+#db# 7798 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7766 mV       
+#db# 7798 mV       
+#db# 7798 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7798 mV       
+#db# 7831 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7992 mV       
+#db# 8056 mV       
+#db# 8088 mV       
+#db# 8121 mV       
+#db# 8153 mV       
+#db# 8121 mV       
+#db# 8056 mV       
+#db# 7959 mV       
+#db# 7863 mV       
+#db# 7927 mV       
+#db# 7992 mV       
+#db# 7863 mV       
+#db# 7766 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7702 mV       
+#db# 7669 mV       
+#db# 7702 mV       
+#db# 7734 mV       
+#db# 7766 mV       
+#db# 7863 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 8024 mV       
+#db# 8121 mV       
+#db# 8056 mV       
+#db# 8056 mV       
+#db# 8217 mV       
+#db# 8411 mV       
+#db# 8733 mV       
+#db# 8958 mV       
+#db# 8958 mV       
+#db# 8926 mV       
+#db# 8958 mV       
+#db# 8991 mV       
+#db# 9055 mV       
+#db# 8668 mV       
+#db# 8282 mV       
+#db# 8121 mV       
+#db# 8024 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7959 mV       
+#db# 8088 mV       
+#db# 8185 mV       
+#db# 8346 mV       
+#db# 8507 mV       
+#db# 8604 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8540 mV       
+#db# 8540 mV       
+#db# 8314 mV       
+#db# 8185 mV       
+#db# 8088 mV       
+#db# 8088 mV       
+#db# 8056 mV       
+#db# 8056 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# cancelled       
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  7.99 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+--block no:00 key type:00 key:43 41 4d 49 4e 4f  etrans:0
+Block shift=0
+Testing known keys. Sector count=16
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+#db# Can't select card       
+nested...
+
+
+#db# Can't select card       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.37 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  7.89 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring HF antenna, press button to exit       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7927 mV       
+#db# 7959 mV       
+#db# 8024 mV       
+#db# 8024 mV       
+#db# 8121 mV       
+#db# 8314 mV       
+#db# 8378 mV       
+#db# 8378 mV       
+#db# 8378 mV       
+#db# 8217 mV       
+#db# 8024 mV       
+#db# 7766 mV       
+#db# 7412 mV       
+#db# 7025 mV       
+#db# 6896 mV       
+#db# 6767 mV       
+#db# 6541 mV       
+#db# 6445 mV       
+#db# 6284 mV       
+#db# 6348 mV       
+#db# 6219 mV       
+#db# 5961 mV       
+#db# 5768 mV       
+#db# 5671 mV       
+#db# 5800 mV       
+#db# 6477 mV       
+#db# 6509 mV       
+#db# 6606 mV       
+#db# 6638 mV       
+#db# 6670 mV       
+#db# 6606 mV       
+#db# 6541 mV       
+#db# 6574 mV       
+#db# 6638 mV       
+#db# 6670 mV       
+#db# 6670 mV       
+#db# 6606 mV       
+#db# 6574 mV       
+#db# 6606 mV       
+#db# 6606 mV       
+#db# 6541 mV       
+#db# 6445 mV       
+#db# 6445 mV       
+#db# 6477 mV       
+#db# 6541 mV       
+#db# 6574 mV       
+#db# 6832 mV       
+#db# 6832 mV       
+#db# 6864 mV       
+#db# 6864 mV       
+#db# 6541 mV       
+#db# 6187 mV       
+#db# 5833 mV       
+#db# 5542 mV       
+#db# 5124 mV       
+#db# 4769 mV       
+#db# 4608 mV       
+#db# 4511 mV       
+#db# 4253 mV       
+#db# 4382 mV       
+#db# 4318 mV       
+#db# 4447 mV       
+#db# 4576 mV       
+#db# 4769 mV       
+#db# 5059 mV       
+#db# 4995 mV       
+#db# 4930 mV       
+#db# 4833 mV       
+#db# 4543 mV       
+#db# 4125 mV       
+#db# 3738 mV       
+#db# 3609 mV       
+#db# 3480 mV       
+#db# 3512 mV       
+#db# 3834 mV       
+#db# 3834 mV       
+#db# 3834 mV       
+#db# 3738 mV       
+#db# 3448 mV       
+#db# 3287 mV       
+#db# 2997 mV       
+#db# 2707 mV       
+#db# 2642 mV       
+#db# 2642 mV       
+#db# 2545 mV       
+#db# 2384 mV       
+#db# 2352 mV       
+#db# 2352 mV       
+#db# 2352 mV       
+#db# 2352 mV       
+#db# 2352 mV       
+#db# 2352 mV       
+#db# 2513 mV       
+#db# 2674 mV       
+#db# 2835 mV       
+#db# 2868 mV       
+#db# 2900 mV       
+#db# 2900 mV       
+#db# 2932 mV       
+#db# 2932 mV       
+#db# 2932 mV       
+#db# 2932 mV       
+#db# 2964 mV       
+#db# 2932 mV       
+#db# 2964 mV       
+#db# 2964 mV       
+#db# 2964 mV       
+#db# 2997 mV       
+#db# 2997 mV       
+#db# 2964 mV       
+#db# 2997 mV       
+#db# 3029 mV       
+#db# 2997 mV       
+#db# 3029 mV       
+#db# 3029 mV       
+#db# 3093 mV       
+#db# 3190 mV       
+#db# 3222 mV       
+#db# 3158 mV       
+#db# 3158 mV       
+#db# 3158 mV       
+#db# 3158 mV       
+#db# 3190 mV       
+#db# 3222 mV       
+#db# 3351 mV       
+#db# 4125 mV       
+#db# 4576 mV       
+#db# 4833 mV       
+#db# 4350 mV       
+#db# 4318 mV       
+#db# 4318 mV       
+#db# 4350 mV       
+#db# 4382 mV       
+#db# 4286 mV       
+#db# 4253 mV       
+#db# 4286 mV       
+#db# 4253 mV       
+#db# 4253 mV       
+#db# 4253 mV       
+#db# 4286 mV       
+#db# 4382 mV       
+#db# 4350 mV       
+#db# 4189 mV       
+#db# 4189 mV       
+#db# 4221 mV       
+#db# 4286 mV       
+#db# 4286 mV       
+#db# 4415 mV       
+#db# 4511 mV       
+#db# 4640 mV       
+#db# 4866 mV       
+#db# 5091 mV       
+#db# 5285 mV       
+#db# 5510 mV       
+#db# 5607 mV       
+#db# 5510 mV       
+#db# 5091 mV       
+#db# 4962 mV       
+#db# 4962 mV       
+#db# 5156 mV       
+#db# 5285 mV       
+#db# 5381 mV       
+#db# 5381 mV       
+#db# 5349 mV       
+#db# 5285 mV       
+#db# 5252 mV       
+#db# 5317 mV       
+#db# 5349 mV       
+#db# 5317 mV       
+#db# 5220 mV       
+#db# 5124 mV       
+#db# 4995 mV       
+#db# 4833 mV       
+#db# 4801 mV       
+#db# 4866 mV       
+#db# 4866 mV       
+#db# 4801 mV       
+#db# 4769 mV       
+#db# 4705 mV       
+#db# 4672 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4705 mV       
+#db# 4737 mV       
+#db# 4737 mV       
+#db# 4737 mV       
+#db# 4769 mV       
+#db# 5059 mV       
+#db# 5252 mV       
+#db# 5478 mV       
+#db# 5736 mV       
+#db# 5768 mV       
+#db# 5607 mV       
+#db# 5639 mV       
+#db# 6155 mV       
+#db# 6574 mV       
+#db# 6477 mV       
+#db# 6251 mV       
+#db# 6187 mV       
+#db# 6219 mV       
+#db# 6187 mV       
+#db# 6284 mV       
+#db# 6380 mV       
+#db# 6380 mV       
+#db# 6348 mV       
+#db# 6284 mV       
+#db# 5833 mV       
+#db# 5542 mV       
+#db# 5414 mV       
+#db# 5446 mV       
+#db# 5317 mV       
+#db# 4930 mV       
+#db# 4737 mV       
+#db# 4705 mV       
+#db# 4640 mV       
+#db# 4672 mV       
+#db# 4705 mV       
+#db# 4672 mV       
+#db# 4543 mV       
+#db# 4511 mV       
+#db# 4415 mV       
+#db# 4382 mV       
+#db# 4511 mV       
+#db# 4705 mV       
+#db# 4737 mV       
+#db# 4769 mV       
+#db# 4801 mV       
+#db# 4801 mV       
+#db# 4737 mV       
+#db# 4576 mV       
+#db# 4415 mV       
+#db# 4189 mV       
+#db# 4415 mV       
+#db# 4479 mV       
+#db# 4382 mV       
+#db# 4253 mV       
+#db# 4060 mV       
+#db# 3931 mV       
+#db# 3770 mV       
+#db# 3770 mV       
+#db# 3931 mV       
+#db# 3996 mV       
+#db# 3963 mV       
+#db# 3834 mV       
+#db# 3641 mV       
+#db# 3544 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3706 mV       
+#db# 3996 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 3963 mV       
+#db# 3899 mV       
+#db# 3770 mV       
+#db# 3738 mV       
+#db# 3738 mV       
+#db# 3834 mV       
+#db# 3899 mV       
+#db# 3996 mV       
+#db# 4060 mV       
+#db# 4125 mV       
+#db# 4092 mV       
+#db# 3931 mV       
+#db# 3770 mV       
+#db# 3738 mV       
+#db# 3706 mV       
+#db# 3383 mV       
+#db# 2997 mV       
+#db# 2771 mV       
+#db# 2642 mV       
+#db# 2610 mV       
+#db# 2674 mV       
+#db# 2674 mV       
+#db# 2578 mV       
+#db# 2610 mV       
+#db# 2900 mV       
+#db# 3029 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3061 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3125 mV       
+#db# 3093 mV       
+#db# 3093 mV       
+#db# 3158 mV       
+#db# 3125 mV       
+#db# 3158 mV       
+#db# 3222 mV       
+#db# 3254 mV       
+#db# 3351 mV       
+#db# 3512 mV       
+#db# 3738 mV       
+#db# 4060 mV       
+#db# 4543 mV       
+#db# 4511 mV       
+#db# 4125 mV       
+#db# 4125 mV       
+#db# 4189 mV       
+#db# 4286 mV       
+#db# 4447 mV       
+#db# 4511 mV       
+#db# 4447 mV       
+#db# 4318 mV       
+#db# 4060 mV       
+#db# 3996 mV       
+#db# 3996 mV       
+#db# 3996 mV       
+#db# 4060 mV       
+#db# 4092 mV       
+#db# 4125 mV       
+#db# 4318 mV       
+#db# 4576 mV       
+#db# 4608 mV       
+#db# 4511 mV       
+#db# 4543 mV       
+#db# 4801 mV       
+#db# 5897 mV       
+#db# 6219 mV       
+#db# 6284 mV       
+#db# 6413 mV       
+#db# 6606 mV       
+#db# 6832 mV       
+#db# 6928 mV       
+#db# 6477 mV       
+#db# 6219 mV       
+#db# 6123 mV       
+#db# 5994 mV       
+#db# 5961 mV       
+#db# 6058 mV       
+#db# 6284 mV       
+#db# 6413 mV       
+#db# 6574 mV       
+#db# 6541 mV       
+#db# 6348 mV       
+#db# 6251 mV       
+#db# 6251 mV       
+#db# 6284 mV       
+#db# 6284 mV       
+#db# 6155 mV       
+#db# 6155 mV       
+#db# 6348 mV       
+#db# 6509 mV       
+#db# 6638 mV       
+#db# 6638 mV       
+#db# 6541 mV       
+#db# 6348 mV       
+#db# 6187 mV       
+#db# 5833 mV       
+#db# 5800 mV       
+#db# 5736 mV       
+#db# 5639 mV       
+#db# 5639 mV       
+#db# 5639 mV       
+#db# 5478 mV       
+#db# 5414 mV       
+#db# 5575 mV       
+#db# 5607 mV       
+#db# 5542 mV       
+#db# 5542 mV       
+#db# 5446 mV       
+#db# 5317 mV       
+#db# 5446 mV       
+#db# 5542 mV       
+#db# 5607 mV       
+#db# 5542 mV       
+#db# 5446 mV       
+#db# 5091 mV       
+#db# 4543 mV       
+#db# 4189 mV       
+#db# 3867 mV       
+#db# 3738 mV       
+#db# 3609 mV       
+#db# 3867 mV       
+#db# 4608 mV       
+#db# 4576 mV       
+#db# 4543 mV       
+#db# 4543 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4640 mV       
+#db# 4543 mV       
+#db# 4543 mV       
+#db# 4705 mV       
+#db# 4608 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4672 mV       
+#db# 4769 mV       
+#db# 4769 mV       
+#db# 4769 mV       
+#db# 4705 mV       
+#db# 4608 mV       
+#db# 4608 mV       
+#db# 4640 mV       
+#db# 4962 mV       
+#db# 5091 mV       
+#db# 4801 mV       
+#db# 4769 mV       
+#db# 4801 mV       
+#db# 4801 mV       
+#db# 4866 mV       
+#db# 4833 mV       
+#db# 4898 mV       
+#db# 4801 mV       
+#db# 4962 mV       
+#db# 5156 mV       
+#db# 5220 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5220 mV       
+#db# 4962 mV       
+#db# 4962 mV       
+#db# 4962 mV       
+#db# 5059 mV       
+#db# 5220 mV       
+#db# 5027 mV       
+#db# 4930 mV       
+#db# 5156 mV       
+#db# 5252 mV       
+#db# 5317 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5220 mV       
+#db# 5317 mV       
+#db# 5059 mV       
+#db# 5059 mV       
+#db# 4962 mV       
+#db# 4898 mV       
+#db# 4801 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4543 mV       
+#db# 4286 mV       
+#db# 4157 mV       
+#db# 4060 mV       
+#db# 3931 mV       
+#db# 3802 mV       
+#db# 3770 mV       
+#db# 3706 mV       
+#db# 3609 mV       
+#db# 3641 mV       
+#db# 3802 mV       
+#db# 3770 mV       
+#db# 3770 mV       
+#db# 3802 mV       
+#db# 3834 mV       
+#db# 3834 mV       
+#db# 3867 mV       
+#db# 3899 mV       
+#db# 3931 mV       
+#db# 3673 mV       
+#db# 3480 mV       
+#db# 3480 mV       
+#db# 3480 mV       
+#db# 3512 mV       
+#db# 3480 mV       
+#db# 3480 mV       
+#db# 3416 mV       
+#db# 3544 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3512 mV       
+#db# 3383 mV       
+#db# 3351 mV       
+#db# 3351 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3609 mV       
+#db# 3609 mV       
+#db# 3641 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3609 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3673 mV       
+#db# 3609 mV       
+#db# 3673 mV       
+#db# 3770 mV       
+#db# 3738 mV       
+#db# 3770 mV       
+#db# 3802 mV       
+#db# 3899 mV       
+#db# 3834 mV       
+#db# 3706 mV       
+#db# 3609 mV       
+#db# 3480 mV       
+#db# 3448 mV       
+#db# 3512 mV       
+#db# 3673 mV       
+#db# 3738 mV       
+#db# 3641 mV       
+#db# 3673 mV       
+#db# 3609 mV       
+#db# 3673 mV       
+#db# 3996 mV       
+#db# 4769 mV       
+#db# 5156 mV       
+#db# 5317 mV       
+#db# 4543 mV       
+#db# 4350 mV       
+#db# 4318 mV       
+#db# 4253 mV       
+#db# 4253 mV       
+#db# 4415 mV       
+#db# 5091 mV       
+#db# 5833 mV       
+#db# 5929 mV       
+#db# 5478 mV       
+#db# 4866 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4608 mV       
+#db# 4543 mV       
+#db# 4543 mV       
+#db# 4576 mV       
+#db# 4608 mV       
+#db# 4608 mV       
+#db# 4640 mV       
+#db# 4769 mV       
+#db# 4962 mV       
+#db# 5446 mV       
+#db# 5671 mV       
+#db# 5285 mV       
+#db# 4866 mV       
+#db# 4705 mV       
+#db# 4769 mV       
+#db# 4769 mV       
+#db# 4640 mV       
+#db# 4576 mV       
+#db# 4608 mV       
+#db# 4608 mV       
+#db# 4543 mV       
+#db# 4415 mV       
+#db# 4286 mV       
+#db# 4157 mV       
+#db# 4157 mV       
+#db# 3867 mV       
+#db# 3641 mV       
+#db# 3802 mV       
+#db# 3963 mV       
+#db# 3963 mV       
+#db# 4060 mV       
+#db# 4189 mV       
+#db# 4221 mV       
+#db# 4189 mV       
+#db# 4189 mV       
+#db# 4157 mV       
+#db# 4189 mV       
+#db# 4157 mV       
+#db# 4125 mV       
+#db# 3996 mV       
+#db# 3899 mV       
+#db# 3867 mV       
+#db# 3770 mV       
+#db# 3609 mV       
+#db# 3512 mV       
+#db# 3512 mV       
+#db# 3577 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3673 mV       
+#db# 3641 mV       
+#db# 3641 mV       
+#db# 3706 mV       
+#db# 3834 mV       
+#db# 4028 mV       
+#db# 4125 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 4028 mV       
+#db# 4060 mV       
+#db# 4092 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 4028 mV       
+#db# 4028 mV       
+#db# 4028 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 4092 mV       
+#db# 4060 mV       
+#db# 4060 mV       
+#db# 4125 mV       
+#db# 4286 mV       
+#db# 4608 mV       
+#db# 4672 mV       
+#db# 4447 mV       
+#db# 4189 mV       
+#db# 4157 mV       
+#db# 4125 mV       
+#db# 4157 mV       
+#db# 4157 mV       
+#db# 4221 mV       
+#db# 4447 mV       
+#db# 4801 mV       
+#db# 5156 mV       
+#db# 5510 mV       
+#db# 5768 mV       
+#db# 5349 mV       
+#db# 4833 mV       
+#db# 4672 mV       
+#db# 4640 mV       
+#db# 4608 mV       
+#db# 4608 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4543 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4576 mV       
+#db# 4608 mV       
+#db# 4640 mV       
+#db# 4640 mV       
+#db# 4672 mV       
+#db# 4801 mV       
+#db# 5059 mV       
+#db# 5414 mV       
+#db# 5768 mV       
+#db# 6123 mV       
+#db# 6284 mV       
+#db# 5833 mV       
+#db# 5349 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5252 mV       
+#db# 5188 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5059 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.50 V @   125.00 kHz
+# LF antenna:  5.50 V @   134.00 kHz
+# LF optimal:  5.64 V @    46.88 kHz
+# HF antenna:  5.16 V @    13.56 MHz
+# Your LF antenna is marginal.
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring HF antenna, press button to exit       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5156 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5091 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# 5124 mV       
+#db# Measuring HF antenna, press button to exit       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1836 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1836 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1804 mV       
+#db# 1804 mV       
+#db# 1836 mV       
+#db# 1804 mV       
+#db# cancelled       
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+list             List ISO 14443a history
+reader           Act like an ISO14443 Type A reader
+sim              <UID> -- Fake ISO 14443a tag
+snoop            Eavesdrop ISO 14443 Type A
+#db# cancelled_a       
+#db# 11 0 0       
+#db# 20 1b6 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 45  cc  00!   
+ + 129676:   0: TAG c9  22! e6  00!   
+ + 259248:   0: TAG 93  45  cc  00!   
+ +  10808:   0: TAG 1d!   
+ + 119224:   0: TAG 07    
+ +  10388:   0: TAG ea  07    
+ + 122380:   0: TAG 45  cc  00!   
+ +  10648:   0: TAG 56  3b    
+ + 698193:   0: TAG 07    
+ +  37597:   0: TAG ea  07    
+ + 283200:   0: TAG e4! 11! 73  00!   
+ +  27986:   0: TAG 01    
+ + 305896:   0: TAG 45  cc  00!   
+ + 151111:   0: TAG 0f!   
+ + 174597:   0: TAG 0f!   
+ + 135604:   0: TAG 0f!   
+ + 153780:   0: TAG 93  45  cc  00!   
+ + 163548:   0: TAG 56  3b    
+ + 161061:   0: TAG 93  45  cc  00!   
+ + 135374:   0: TAG 0f!   
+ +  10374:   0: TAG 56  3b    
+ + 186023:   0: TAG 1c    
+ +  20080:   0: TAG 0e    
+ + 188455:   0: TAG 0f!   
+ + 136444:   0: TAG 0f!   
+ +  10622:   0: TAG 1d!   
+ + 316907:   0: TAG 56  3b    
+ + 127420:   0: TAG 93  45  cc  00!   
+ + 182276:   0: TAG 22! e6  00!   
+ +1683124:   0: TAG 45  cc  00!   
+ +2246716:   0: TAG 93  45  cc  00!   
+ +  14104:   0: TAG 56  3b    
+ +  36697:   0: TAG 93  45  cc  00!   
+ +  22784:   0: TAG 56  3b    
+ +1267855:   0: TAG 56  3b    
+ +1898011:   0: TAG 0f!   
+ +1428697:   0: TAG c9  22! e6  00!   
+ +  10657:   0: TAG 56  3b    
+ +  44065:   0: TAG 56  3b    
+#db# Measuring HF antenna, press button to exit       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5188 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5220 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5220 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5220 mV       
+#db# 5252 mV       
+#db# 5252 mV       
+#db# 5285 mV       
+#db# 5285 mV       
+#db# 5317 mV       
+#db# 5381 mV       
+#db# 5381 mV       
+#db# 5833 mV       
+#db# 6316 mV       
+#db# 6960 mV       
+#db# 7702 mV       
+#db# 8314 mV       
+#db# 8346 mV       
+#db# 7573 mV       
+#db# 7025 mV       
+#db# 6832 mV       
+#db# 6703 mV       
+#db# 6638 mV       
+#db# 6638 mV       
+#db# 6638 mV       
+#db# 6606 mV       
+#db# 6606 mV       
+#db# 6574 mV       
+#db# 6606 mV       
+#db# 6670 mV       
+#db# 6703 mV       
+#db# 6896 mV       
+#db# 7283 mV       
+#db# 7702 mV       
+#db# 7959 mV       
+#db# 8185 mV       
+#db# 8314 mV       
+#db# 8282 mV       
+#db# 7476 mV       
+#db# 6928 mV       
+#db# 6832 mV       
+#db# 6799 mV       
+#db# 6799 mV       
+#db# 6799 mV       
+#db# 6735 mV       
+#db# 6735 mV       
+#db# 6960 mV       
+#db# 7444 mV       
+#db# 7863 mV       
+#db# 8411 mV       
+#db# 9087 mV       
+#db# 9474 mV       
+#db# 9571 mV       
+#db# 9539 mV       
+#db# 9442 mV       
+#db# 8572 mV       
+#db# 7734 mV       
+#db# 7669 mV       
+#db# 7573 mV       
+#db# 7508 mV       
+#db# 7508 mV       
+#db# 7508 mV       
+#db# 7541 mV       
+#db# 7508 mV       
+#db# 7541 mV       
+#db# 7637 mV       
+#db# 7895 mV       
+#db# 8088 mV       
+#db# 8604 mV       
+#db# 9152 mV       
+#db# 9603 mV       
+#db# 9925 mV       
+#db# 10022 mV       
+#db# 9861 mV       
+#db# 8958 mV       
+#db# 8153 mV       
+#db# 8024 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7927 mV       
+#db# 8024 mV       
+#db# 8088 mV       
+#db# 8121 mV       
+#db# 8185 mV       
+#db# 8121 mV       
+#db# 8121 mV       
+#db# 8153 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8250 mV       
+#db# 8282 mV       
+#db# 8282 mV       
+#db# 8282 mV       
+#db# 8282 mV       
+#db# 8378 mV       
+#db# 8733 mV       
+#db# 9120 mV       
+#db# 9281 mV       
+#db# 9345 mV       
+#db# 9410 mV       
+#db# 9410 mV       
+#db# 8797 mV       
+#db# 8443 mV       
+#db# 8411 mV       
+#db# 8507 mV       
+#db# 8378 mV       
+#db# 8346 mV       
+#db# 8314 mV       
+#db# 8346 mV       
+#db# 8346 mV       
+#db# 8475 mV       
+#db# 8862 mV       
+#db# 9184 mV       
+#db# 9410 mV       
+#db# 9571 mV       
+#db# 9732 mV       
+#db# 9764 mV       
+#db# 9732 mV       
+#db# 9764 mV       
+#db# 9796 mV       
+#db# 9796 mV       
+#db# 9764 mV       
+#db# 9474 mV       
+#db# 9152 mV       
+#db# 8797 mV       
+#db# 8636 mV       
+#db# 8572 mV       
+#db# 8572 mV       
+#db# 8540 mV       
+#db# 8507 mV       
+#db# 8507 mV       
+#db# 8507 mV       
+#db# 8572 mV       
+#db# 8668 mV       
+#db# 8830 mV       
+#db# 9216 mV       
+#db# 9410 mV       
+#db# 9539 mV       
+#db# 9603 mV       
+#db# 9539 mV       
+#db# 9410 mV       
+#db# 9313 mV       
+#db# 9184 mV       
+#db# 9055 mV       
+#db# 9023 mV       
+#db# 8894 mV       
+#db# 8797 mV       
+#db# 8765 mV       
+#db# 8797 mV       
+#db# 8797 mV       
+#db# 8733 mV       
+#db# 8765 mV       
+#db# 8830 mV       
+#db# 8894 mV       
+#db# 8958 mV       
+#db# 9087 mV       
+#db# 9249 mV       
+#db# 9377 mV       
+#db# 9410 mV       
+#db# 9313 mV       
+#db# 9216 mV       
+#db# 8991 mV       
+#db# 8958 mV       
+#db# 9184 mV       
+#db# 9087 mV       
+#db# 8668 mV       
+#db# 8507 mV       
+#db# 8475 mV       
+#db# 8475 mV       
+#db# 8411 mV       
+#db# 8378 mV       
+#db# 8378 mV       
+#db# 8346 mV       
+#db# 8378 mV       
+#db# 8411 mV       
+#db# 8475 mV       
+#db# 8668 mV       
+#db# 8862 mV       
+#db# 8926 mV       
+#db# 8894 mV       
+#db# 8797 mV       
+#db# 8636 mV       
+#db# 8507 mV       
+#db# 8765 mV       
+#db# 8926 mV       
+#db# 8540 mV       
+#db# 8346 mV       
+#db# 8314 mV       
+#db# 8314 mV       
+#db# 8282 mV       
+#db# 8217 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8153 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8217 mV       
+#db# 8250 mV       
+#db# 8250 mV       
+#db# 8314 mV       
+#db# 8378 mV       
+#db# 8604 mV       
+#db# 8830 mV       
+#db# 8765 mV       
+#db# 8540 mV       
+#db# 8250 mV       
+#db# 7927 mV       
+#db# 7831 mV       
+#db# 7895 mV       
+#db# 7605 mV       
+#db# 7541 mV       
+#db# 7863 mV       
+#db# 8507 mV       
+#db# 8153 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7895 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7798 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7927 mV       
+#db# 8282 mV       
+#db# 8507 mV       
+#db# 8701 mV       
+#db# 8958 mV       
+#db# 9120 mV       
+#db# 9120 mV       
+#db# 8958 mV       
+#db# 8668 mV       
+#db# 8668 mV       
+#db# 8926 mV       
+#db# 8572 mV       
+#db# 8378 mV       
+#db# 8346 mV       
+#db# 8346 mV       
+#db# 8443 mV       
+#db# 8507 mV       
+#db# 8668 mV       
+#db# 8733 mV       
+#db# 8701 mV       
+#db# 8604 mV       
+#db# 8411 mV       
+#db# 8056 mV       
+#db# 7734 mV       
+#db# 7895 mV       
+#db# 7895 mV       
+#db# 7573 mV       
+#db# 7412 mV       
+#db# 7283 mV       
+#db# 6767 mV       
+#db# 7250 mV       
+#db# 7734 mV       
+#db# 7412 mV       
+#db# 7379 mV       
+#db# 7347 mV       
+#db# 7347 mV       
+#db# 7379 mV       
+#db# 7702 mV       
+#db# 7959 mV       
+#db# 8121 mV       
+#db# 8507 mV       
+#db# 8797 mV       
+#db# 8926 mV       
+#db# 8926 mV       
+#db# 8862 mV       
+#db# 8604 mV       
+#db# 7959 mV       
+#db# 7895 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7927 mV       
+#db# 8088 mV       
+#db# 8121 mV       
+#db# 8153 mV       
+#db# 8314 mV       
+#db# 8540 mV       
+#db# 8701 mV       
+#db# 8636 mV       
+#db# 8250 mV       
+#db# 7798 mV       
+#db# 7895 mV       
+#db# 8346 mV       
+#db# 7959 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7734 mV       
+#db# 7702 mV       
+#db# 7669 mV       
+#db# 7669 mV       
+#db# 7702 mV       
+#db# 7734 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7927 mV       
+#db# 7992 mV       
+#db# 8378 mV       
+#db# 8862 mV       
+#db# 9055 mV       
+#db# 9055 mV       
+#db# 8958 mV       
+#db# 8572 mV       
+#db# 8378 mV       
+#db# 8314 mV       
+#db# 8250 mV       
+#db# 8185 mV       
+#db# 8217 mV       
+#db# 8250 mV       
+#db# 8378 mV       
+#db# 8830 mV       
+#db# 9055 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9055 mV       
+#db# 9087 mV       
+#db# 8830 mV       
+#db# 8475 mV       
+#db# 8378 mV       
+#db# 8346 mV       
+#db# 8314 mV       
+#db# 8346 mV       
+#db# 8346 mV       
+#db# 8475 mV       
+#db# 8894 mV       
+#db# 9087 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9184 mV       
+#db# 9184 mV       
+#db# 9184 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9152 mV       
+#db# 9087 mV       
+#db# 9120 mV       
+#db# 9184 mV       
+#db# 9281 mV       
+#db# 9281 mV       
+#db# 9313 mV       
+#db# 9249 mV       
+#db# 9249 mV       
+#db# 9216 mV       
+#db# 9152 mV       
+#db# 9055 mV       
+#db# 9055 mV       
+#db# 9023 mV       
+#db# 9023 mV       
+#db# 9023 mV       
+#db# 9055 mV       
+#db# 9216 mV       
+#db# 9184 mV       
+#db# 9087 mV       
+#db# 8958 mV       
+#db# 8701 mV       
+#db# 8443 mV       
+#db# 8314 mV       
+#db# 8282 mV       
+#db# 8250 mV       
+#db# 8250 mV       
+#db# 8217 mV       
+#db# 8217 mV       
+#db# 8250 mV       
+#db# 8282 mV       
+#db# 8411 mV       
+#db# 8765 mV       
+#db# 8926 mV       
+#db# 9087 mV       
+#db# 9120 mV       
+#db# 9023 mV       
+#db# 8958 mV       
+#db# 9055 mV       
+#db# 9087 mV       
+#db# 8701 mV       
+#db# 8378 mV       
+#db# 8282 mV       
+#db# 8250 mV       
+#db# 8217 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8217 mV       
+#db# 8217 mV       
+#db# 8282 mV       
+#db# 8250 mV       
+#db# 8250 mV       
+#db# 8185 mV       
+#db# 8185 mV       
+#db# 8250 mV       
+#db# 8443 mV       
+#db# 8540 mV       
+#db# 8540 mV       
+#db# 8443 mV       
+#db# 8443 mV       
+#db# 8411 mV       
+#db# 8443 mV       
+#db# 8507 mV       
+#db# 8733 mV       
+#db# 8701 mV       
+#db# 8733 mV       
+#db# 8765 mV       
+#db# 8894 mV       
+#db# 8958 mV       
+#db# 8991 mV       
+#db# 9023 mV       
+#db# 9087 mV       
+#db# 9087 mV       
+#db# 9152 mV       
+#db# 9184 mV       
+#db# 9023 mV       
+#db# 8862 mV       
+#db# 8797 mV       
+#db# 8668 mV       
+#db# 8701 mV       
+#db# 8636 mV       
+#db# 8701 mV       
+#db# 8765 mV       
+#db# 8636 mV       
+#db# 8668 mV       
+#db# 8701 mV       
+#db# 8797 mV       
+#db# 8797 mV       
+#db# 8668 mV       
+#db# 8507 mV       
+#db# 8314 mV       
+#db# 8217 mV       
+#db# 7992 mV       
+#db# 7927 mV       
+#db# 8346 mV       
+#db# 8314 mV       
+#db# 7927 mV       
+#db# 7895 mV       
+#db# 7863 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7831 mV       
+#db# 7863 mV       
+#db# 7863 mV       
+#db# 7959 mV       
+#db# 8088 mV       
+#db# 8378 mV       
+#db# 8668 mV       
+#db# 8958 mV       
+#db# 9023 mV       
+#db# 8991 mV       
+#db# 8958 mV       
+#db# 9023 mV       
+#db# 8797 mV       
+#db# 8378 mV       
+#db# 8282 mV       
+#db# 8250 mV       
+#db# 8250 mV       
+#db# 8282 mV       
+#db# 8378 mV       
+#db# 8604 mV       
+#db# 8958 mV       
+#db# 9087 mV       
+#db# 9055 mV       
+#db# 9055 mV       
+#db# 8894 mV       
+#db# 8668 mV       
+#db# 8411 mV       
+#db# 8153 mV       
+#db# 8250 mV       
+#db# 8572 mV       
+#db# 8797 mV       
+#db# 8636 mV       
+#db# 8314 mV       
+#db# 8153 mV       
+#db# 8088 mV       
+#db# 8088 mV       
+#db# 8056 mV       
+#db# 8024 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7992 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7927 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# 7959 mV       
+#db# cancelled       
+#db# cancelled_a       
+#db# 4 0 0       
+#db# 20 2b3 26       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 0f!   
+ +   7604:    :     93  20    
+ +    254:   0: TAG 01    
+ +  35267:    :     52    
+ +  18610:   0: TAG 56!   
+ +1640802:    :     26    
+ + 594894:   0: TAG 01    
+ +     52:   0: TAG 05!   
+ +    116:   0: TAG 00!   
+ +   4349:    :     e0  81  b8  62    
+ +  27939:   0: TAG 02    
+ +    136:   0: TAG 0b    
+ +1073488:    :     26    
+ + 578018:    :     26    
+ + 576382:   0: TAG 01    
+ +   7775:   0: TAG 00!   
+ +  44009:   0: TAG a2! 03!   
+ +    308:   0: TAG 03!   
+ +  10588:   0: TAG 0e    
+ +1639898:    :     26    
+ + 671478:   0: TAG 01    
+ +  16163:   0: TAG 01    
+ +  42155:   0: TAG ff  01    
+ +  30602:   0: TAG 01    
+ +    132:   0: TAG 1d!   
+ + 991448:   0: TAG a2!   
+ + 146690:    :     30  00  02  a8    
+ +  22618:    :     52    
+ + 130548:    :     52    
+ +     91:   0: TAG 07    
+ + 133818:    :     52    
+ +   7816:   0: TAG a2! 03!   
+ +  10818:   0: TAG 01    
+ + 111858:    :     52    
+ +  18587:   0: TAG 0f!   
+ +    116:   0: TAG 02    
+ +  91815:   0: TAG 01    
+ +  20022:    :     52    
+ +   7817:   0: TAG 02    
+ +    194:   0: TAG 01    
+ + 124193:    :     52    
+ +     91:   0: TAG 01    
+ +     36:   0: TAG 00! 01    
+ + 130357:    :     52    
+ +     91:   0: TAG 07    
+ +   7670:    :     93  20    
+ +  11802:   0: TAG 00!   
+ + 119690:   0: TAG a2! 03!   
+ +  10810:   0: TAG 00!   
+ +  91852:   0: TAG 01    
+ +  19990:    :     52    
+ +   7912:   0: TAG 03!   
+ +    208:   0: TAG 01    
+ +  10522:   0: TAG 56!   
+ +  92649:    :     30  00  02  a8    
+ +     99:   0: TAG 01    
+ +  28000:   0: TAG 16! 9e    
+ +  11004:   0: TAG 01    
+ +  99006:    :     50  00  57  cd    
+ +  20298:   0: TAG 16! 9e    
+ + 122808:   0: TAG ff  07    
+ +   7732:   0: TAG a2! 03!   
+ +  10686:    :     93  70  5b  7a  b9  84  1c  e4  4a    
+ +    162:   0: TAG 02    
+ +    104:   0: TAG 03!   
+ + 215974:    :     26    
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 01    
+ +    248:   0: TAG 01    
+ +  22690:    :     50  00  57  cd    
+ +  12464:    :     52    
+ +    102:   0: TAG 07    
+ +   7684:   0: TAG a2! 93  45  cc  00!   
+ +  10912:   0: TAG 01    
+ + 973077:   0: TAG 02    
+ + 130607:   0: TAG 01    
+ +     56:   0: TAG 00!   
+ +    170:   0: TAG 03!   
+ + 130478:   0: TAG 00!   
+ + 132148:   0: TAG 27  8b! 08    
+ +    238:   0: TAG 07    
+ + 121499:   0: TAG ff  07    
+ +   7708:   0: TAG 02    
+ + 101755:    :     30  00  02  a8    
+ + 126884:    :     26    
+ +  12983:   0: TAG 02    
+ +  69337:   0: TAG 01    
+ +   8476:   0: TAG 01    
+ +   8472:   0: TAG 00!   
+ +1055156:   0: TAG 01    
+ +   7828:   0: TAG 45    
+ +  10612:   0: TAG 03!   
+ +  12138:    :     50  00  57  cd    
+ +  12614:   0: TAG 07    
+ +   7964:   0: TAG 04    
+ +     52:   0: TAG 01    
+ + 966552:   0: TAG 01    
+ + 106772:    :     26    
+ + 874792:   0: TAG 07    
+ +   7660:   0: TAG a2!   
+ +  10816:   0: TAG 16    
+ +  15126:    :     50  00  57  cd    
+ +  21179:   0: TAG 93  01    
+ +1368880:    :     26    
+ + 872259:   0: TAG a2! 93!   
+ +1014452:   0: TAG 03!   
+ +   7764:   0: TAG 93  45  cc  00!   
+ +  10752:   0: TAG 02    
+ +     80:   0: TAG 1d!   
+ + 113576:   0: TAG 01    
+ +   7732:   0: TAG a2! 93  45  04    
+ +    308:   0: TAG 03!   
+ +  10524:   0: TAG ba! 01    
+ + 118812:   0: TAG a2! 93  45  4c    
+ +  10808:   0: TAG 56  3b    
+ + 118940:   0: TAG 93  45  cc  00!   
+ +  10744:   0: TAG 56  3b    
+ + 119778:   0: TAG 03!   
+ +     74:   0: TAG 01    
+ +    104:   0: TAG 1c    
+ +  10584:   0: TAG 56  3b    
+ + 118980:   0: TAG 01    
+ +    136:   0: TAG 01    
+ +  10528:   0: TAG 56  3b    
+ + 119816:   0: TAG 01    
+ +  11580:   0: TAG 56  3b    
+ + 118970:   0: TAG 45  cc  00!   
+ +16787898:   0: TAG 56  3b    
+ +-16658068:   0: TAG 0f!   
+ +  10584:   0: TAG 3b    
+ + 123992:   0: TAG 01    
+ +  10676:   0: TAG 56  3b    
+ + 118968:   0: TAG 01    
+ +    200:   0: TAG 00!   
+ +  10500:   0: TAG 56  3b    
+ + 118904:   0: TAG 01    
+ +  10772:   0: TAG 56  3b    
+ + 111158:   0: TAG ff    
+ +  18542:   0: TAG 56  3b    
+ + 111118:   0: TAG 7f    
+ +   7990:   0: TAG 0f!   
+ +  10492:   0: TAG 01    
+ +     36:   0: TAG 06!   
+ +    112:   0: TAG 01    
+ + 122444:   0: TAG 0f!   
+ +  10590:   0: TAG 1d!   
+ + 119078:   0: TAG 0f!   
+ +  10592:   0: TAG 1d!   
+ + 119052:   0: TAG 0f!   
+ +  10596:   0: TAG ee!   
+ + 119096:   0: TAG 0f!   
+ +  10534:   0: TAG ea  07    
+ + 120990:   0: TAG 0f!   
+ + 136284:   0: TAG 0f!   
+ +  10536:   0: TAG ea  07    
+ + 119156:   0: TAG 0f!   
+ +  10588:   0: TAG 3b    
+ +  99357:    :     50  00  57  cd    
+ +  12533:   0: TAG 0f!   
+ +  96502:    :     26    
+ + 573030:   0: TAG 07    
+ + 583166:   0: TAG a2! 13    
+ +  10832:   0: TAG ba! 01    
+ + 984365:    :     30  00  02  a8    
+ +4207216:   0: TAG 01    
+ +-4192189:   0: TAG 0f!   
+ + 139666:    :     26  52  1d  13  81     !crc
+ +-17905660:    :     81  00  00  00  00  01  01  6e  77  13  81  00  00  00  00  01  01  ae  1a     !crc
+#db# cancelled_a       
+#db# f 0 0       
+#db# 20 796 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 4f! 7c  c1! 1e!   
+ + 332134:   0: TAG 3f!   
+ +   3378:   0: TAG 56  3b    
+ +  26000:   0: TAG 01    
+ +    240:   0: TAG 03!   
+ +  15189:   0: TAG c5! ed!   
+ +    920:   0: TAG 01    
+ +     48:   0: TAG 07    
+ +    202:   0: TAG 01    
+ +  14629:   0: TAG 5c  be  a5  0b  c9! 3f! ba! 9d  04     !crc
+ +    832:   0: TAG 82! c7  b8! 82  a4    
+ +  23711:   0: TAG 01    
+ +  25389:   0: TAG 41!   
+ +    160:   0: TAG 50! 6c  2f  e1! 6a! 28! ec  df! e5! 04     !crc
+ +    848:   0: TAG e6! c1  6d    
+ +  33455:   0: TAG 01    
+ +    798:   0: TAG 0a!   
+ +  14687:   0: TAG 07    
+ +     80:   0: TAG 2a! 13!   
+ +    232:   0: TAG 07    
+ +    184:   0: TAG 8b  4e! 4b! 97  80! 5a  8e! 02     !crc
+ +    720:   0: TAG 76    
+ +  22552:   0: TAG 03!   
+ +    118:   0: TAG 01    
+ +  24550:   0: TAG d8  90! 28  da  d8! 28  ec! a8! a2! 2d  ab  56  6d  97! f9  57! 02     !crc
+ +  36703:   0: TAG 01    
+ +     69:   0: TAG 8f  07    
+ +    874:   0: TAG 03!   
+ +    166:   0: TAG 49! 06!   
+ +  15968:   0: TAG 66! e9! 94! 2b  aa! 32! 96  a4! 57! 05!    !crc
+ +    704:   0: TAG 0b    
+ +  22782:   0: TAG 54  c9  b0! b1! 49  a7  a5  29  53! ae! 3a!    !crc
+ +  23519:   0: TAG 35! 01    
+ +    319:   0: TAG 9c! a9  b8  67! 99  81  63  87!    !crc
+ +    720:   0: TAG 8a  80! 1b!   
+ +  39014:   0: TAG 05!   
+ +    242:   0: TAG 0f!   
+ +   1064:   0: TAG 01    
+ +  17509:   0: TAG e0  2a  1f    
+ +    423:   0: TAG d2  e5! 48! 5b! 85! 8b  a2  f5  f7  10     !crc
+ +  54373:   0: TAG 02    
+ +    151:   0: TAG 7e! fa  7a  7d! 19! 49! 3d  79  62! 42!    !crc
+ +    872:   0: TAG 77! 8f    
+ +  38918:   0: TAG 02    
+ +    266:   0: TAG 01    
+ +    782:   0: TAG 61!   
+ +    250:   0: TAG 03!   
+ +  18124:   0: TAG a4! 15! ab! 12  61  a3  ed! 01     !crc
+ +    680:   0: TAG 4a  4d! ee! 51! 34! dd  00!    !crc
+ +  25476:   0: TAG 00!   
+ +    218:   0: TAG 10  43  e7  02  cf! b3  e3  7f! 70  3d     !crc
+ +    878:   0: TAG bf  29    
+ +  24832:   0: TAG 6c  66  53! 7c! 56! 5a  70! 5d! a2! 74  51! 5f  b4  49! 3e  be  0b     !crc
+ +  38928:   0: TAG 1f    
+ +    232:   0: TAG 07    
+ +  17244:   0: TAG 01! b8  65! 01    
+ +    256:   0: TAG 01    
+ +     72:   0: TAG 01    
+ +    112:   0: TAG 03!   
+ +    208:   0: TAG 86! 06! 04! 97! 92  aa! 01     !crc
+ +  26348:   0: TAG 03!   
+ +     48:   0: TAG 01    
+ +    896:   0: TAG d7! e5  ef! ee!   
+ +  25329:   0: TAG 0f  8c  04    
+ +    455:   0: TAG d4  7f! 23! ea  96  6d! 69! 96  0a!    !crc
+ +  38726:   0: TAG d0  22  7e  45    
+ +   1298:   0: TAG 03!   
+ +  17221:   0: TAG 2b    
+ +    495:   0: TAG 12  18  f4! 67  a4  44!    !crc
+ +    608:   0: TAG 4d!   
+ +  25110:   0: TAG 24  c5! 41  e8! 01    
+ +  26295:   0: TAG 48  2e  c9! e9! 13! 0d  ca  6f!    !crc
+ +   1103:   0: TAG 25  01    
+ +  37512:   0: TAG 01    
+ +    894:   0: TAG cb! 0e  00!   
+ +  17271:   0: TAG 2f    
+ +     98:   0: TAG 00!   
+ +   1104:   0: TAG 01    
+ +  26217:   0: TAG 0f!   
+ +    204:   0: TAG a6  b2! 87! 46    
+ +    320:   0: TAG 01    
+ +    328:   0: TAG 03!   
+ +     48:   0: TAG 01    
+ +  63692:   0: TAG 01    
+ +    840:   0: TAG 03!   
+ +     52:   0: TAG 38    
+ +  46158:   0: TAG 03!   
+ +     74:   0: TAG 72  78  80  53  74! 98     !crc
+ +    576:   0: TAG 84  9c  90! 70  23    
+ +  28173:   0: TAG 81  ad  b1  01    
+ +    743:   0: TAG ef! 15  8d  87! 55! 01     !crc
+ +  58501:   0: TAG 9e  02    
+ +    495:   0: TAG 37! 34! 43  25  b9! a7  0a!    !crc
+ +  27440:   0: TAG 00!   
+ +    140:   0: TAG 01    
+ +     48:   0: TAG 01    
+ +    918:   0: TAG 1f    
+ +    106:   0: TAG 00!   
+ +  26024:   0: TAG fa  0a! c8! b8! 37  05!    !crc
+ +    632:   0: TAG d7  57  18  20    
+ +    424:   0: TAG 01    
+ +  39718:   0: TAG 22!   
+ +   1306:   0: TAG 01    
+ +  18045:   0: TAG 04    
+ +    127:   0: TAG af! 8f  aa  78  9d! 8c! 96  9f! 96  05!    !crc
+ +    744:   0: TAG 0f  6b  24! 2a! 02    
+ +  26262:   0: TAG 34  6a  b4  1a    
+ +    768:   0: TAG b0! dc  c8! 89  55! 33!    !crc
+ +  26302:   0: TAG 4e! c9! d1  02    
+ +    264:   0: TAG 03!   
+ +    152:   0: TAG 0b  9d! 6a! d3  cc! 2c  6c! c3! 4a  91! 12!    !crc
+ +  39622:   0: TAG 0a!   
+ +   1048:   0: TAG 5a! 3e  c1  10    
+ +  18263:   0: TAG 09!   
+ +    191:   0: TAG 22  c7! d6! 29! de! dc! d3  40! 31!    !crc
+ +    680:   0: TAG 04    
+ +    128:   0: TAG a3! ce! 01    
+ +  27336:   0: TAG 01    
+ +  25876:   0: TAG 68  08    
+ +    240:   0: TAG ac  c0  04! ee! 79! 04  a1  dd! 35! 7b  f4! 74! 6e  eb!    !crc
+ +  39790:   0: TAG 04    
+ +   1290:   0: TAG 03!   
+ +  17300:   0: TAG 60  89! 59    
+ +    320:   0: TAG d4  88! a4! fa  34! 79! e8  59! eb! 9c! f9! 03!    !crc
+ +  52492:   0: TAG 01    
+ +     56:   0: TAG 4d! a7  54  b6! 52  be! 01     !crc
+ +    600:   0: TAG 77! 34  ec  d7! b6  05  aa  05!    !crc
+ +  39032:   0: TAG 00!   
+ +     98:   0: TAG ff  07    
+ +   1036:   0: TAG 01    
+ +     90:   0: TAG 01    
+ +  17156:   0: TAG a4! 3e  29  1f! 48! dd! 87  d0! 04     !crc
+ +    848:   0: TAG 55  44  83  08  65! 00!    !crc
+ +  26632:   0: TAG 01    
+ +  25196:   0: TAG 5b  5b! d1! 12! eb! 52     !crc
+ +    536:   0: TAG 69! 96  21! 6e  86! e2  03!    !crc
+ +    480:   0: TAG 07    
+ +     99:   0: TAG 01    
+ +  36267:   0: TAG ee! 61  aa  45    
+ +   1274:   0: TAG 1f    
+ +  17420:   0: TAG a6! 52  bc  a2! 54  7e! 08     !crc
+ +    560:   0: TAG 78! 3b  91! 3c  67    
+ +  25464:   0: TAG 00!   
+ +     36:   0: TAG 01    
+ +     36:   0: TAG 00!   
+ +   1040:   0: TAG 00!   
+ +     44:   0: TAG 03!   
+ +  25161:   0: TAG d3! 54! d2! 03!   
+ +    647:   0: TAG 03!   
+ +    144:   0: TAG d4! bb  55  a9  7c! 03!    !crc
+ +  36638:   0: TAG 13    
+ +   1254:   0: TAG 3c!   
+ +  18403:   0: TAG 07    
+ +  25083:   0: TAG 01    
+ +     74:   0: TAG 5c! 28  27! 01    
+#db# cancelled_a       
+#db# 1 0 0       
+#db# 20 0 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+#db# cancelled_a       
+#db# 2 0 0       
+#db# 20 72c 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 03!   
+ +     42:   0: TAG 40    
+ +   1011:   0: TAG 01    
+ +   2349:   0: TAG 56  3b    
+ + 780772:   0: TAG 0f!   
+ +    200:   0: TAG 03!   
+ +     48:   0: TAG 01    
+ +  24724:   0: TAG 7e  95! f7  00!   
+ +   1121:   0: TAG 6d! 23    
+ +    147:   0: TAG 01    
+ +  12596:   0: TAG f2  26  38  01    
+ +   1208:   0: TAG 5a!   
+ +  14592:   0: TAG 03!   
+ +  21061:   0: TAG e6  88! 45    
+ +    231:   0: TAG 1f    
+ +    320:   0: TAG 49! 65  2b  8f! e2! 47  40! af! 01     !crc
+ +  21536:   0: TAG 03!   
+ +    160:   0: TAG 19    
+ +    208:   0: TAG 01    
+ +    104:   0: TAG 91! bd! 9d! 99! b3! 49! 7b! ad! c9! 30  59!    !crc
+ +  30511:   0: TAG 00!   
+ +     98:   0: TAG 03!   
+ +    926:   0: TAG 01    
+ +    120:   0: TAG 01    
+ +  12957:   0: TAG 01    
+ +    152:   0: TAG 03  64  13    
+ +    400:   0: TAG 01    
+ +    216:   0: TAG 29! 59  4c  ac! 79! 32! 34     !crc
+ +  22582:   0: TAG f7  98! 2b! ea  74  7a  7b! 2b  65! 2b! 09! 66! 8b  39! c6! 9e! 04  03!    !crc
+ +  22638:   0: TAG af  9c  0c! 0b    
+ +  30424:   0: TAG 03!   
+ +    924:   0: TAG 2c! 1b!   
+ +  13827:   0: TAG 01    
+ +  21501:   0: TAG ae  eb! b1  e0!   
+ +    344:   0: TAG 03!   
+ +    136:   0: TAG 07    
+ +     72:   0: TAG 03!   
+ +     80:   0: TAG 53! eb  bb! 32! 35  b5! 1a  02     !crc
+ + 208943:   0: TAG 00!   
+ +     45:   0: TAG 01    
+ + 328372:   0: TAG db  64  a2! 1b! 65! 93  3b     !crc
+ +    552:   0: TAG b6  2c    
+ +    520:   0: TAG 3f!   
+ +  24831:   0: TAG 03!   
+ +  24429:   0: TAG 45    
+ +    144:   0: TAG 07    
+ +     56:   0: TAG 2b! 1a  98! 18  d5  de  2b! 6a! da  ef  53  d8! 36! e5! 03!    !crc
+ +  38661:   0: TAG 01    
+ +    164:   0: TAG 01    
+ +    804:   0: TAG 08    
+ +    226:   0: TAG 03!   
+ +  17253:   0: TAG 02    
+ +     72:   0: TAG 07    
+ +     64:   0: TAG d7  11  14! 2d! 5b  54! 23  56  1d! 54! 60! 5a  00  01     !crc
+ +   1040:   0: TAG 01    
+ +  25168:   0: TAG 00!   
+ +     41:   0: TAG 01    
+ +    798:   0: TAG 01    
+ +  24365:   0: TAG 02    
+ +    144:   0: TAG 96! d5! c5! c8  a6  4a  37! 44  18! e9! 96!    !crc
+ +    832:   0: TAG 07    
+ +  36663:   0: TAG 00!   
+ +    126:   0: TAG 59!   
+ +  17463:   0: TAG 4d! f9! 0a! c3! bb! 3a! 49! 7b! 56  bb! 4b  f6! 38  22! 57! 05!    !crc
+ +  26244:   0: TAG 05!   
+ +   1164:   0: TAG 01    
+ +  24372:   0: TAG 93  ad! eb! ad! 8a  18! 0a! ab  68! 2d!    !crc
+ +    736:   0: TAG 03!   
+ +     72:   0: TAG 01    
+ +  36518:   0: TAG 22!   
+ +    120:   0: TAG 4f! 52    
+ +   1062:   0: TAG 2f    
+ +     84:   0: TAG 00!   
+ +  19191:   0: TAG 01    
+ +  24917:   0: TAG 20    
+ +    160:   0: TAG de! b2! 89! 29  bd  55  9b! 6e! 09! f2  b6! c2  65! 66  6c  01     !crc
+ +  26284:   0: TAG ff! b6  cb  15! 65  cc! e5  0f  97  97  8e! d3  c9! 0b! e3! 1a! bd!    !crc
+ +  37992:   0: TAG 0f!   
+ +     72:   0: TAG 01    
+ +     56:   0: TAG 3e  62    
+ +    944:   0: TAG be!   
+ +  17776:   0: TAG 03!   
+ + 374935:   0: TAG 01    
+ + 137259:   0: TAG 01    
+ +  36874:   0: TAG a6! 35  d9    
+ +   1032:   0: TAG 3f!   
+ +     96:   0: TAG fc! 30!   
+ +  16496:   0: TAG 13    
+ +    102:   0: TAG 89  9b! 9a! 4e  48  5b! 44  bc  58! 46  b0  95!    !crc
+ +    882:   0: TAG 21!   
+ +    112:   0: TAG 79  01    
+ +    120:   0: TAG 01    
+ +  51572:   0: TAG 6c  40  97  1b! 13  3f! 59! 2b  a2! 82  26! d4  82  e2  a8! bf  81!    !crc
+ +  39439:   0: TAG 07    
+ +  19093:   0: TAG e6  fc! d1! 27  3c  c1  1e  e0  34! 98     !crc
+ +    992:   0: TAG fb! d9! 01    
+ +  27415:   0: TAG 00!   
+ +  28517:   0: TAG 0a  26  dd! 1e! c1! dd! 3a  62! ca  79! 22! 05!    !crc
+ +    928:   0: TAG 01    
+ +  40892:   0: TAG 8f! e6! 01    
+ +  18120:   0: TAG 05!   
+ +     56:   0: TAG 94  b1  f1! b4  cf  d7  f3! 2a  cf  c8! 76! af  08     !crc
+ +    944:   0: TAG 66!   
+ +    184:   0: TAG 23    
+ +  26830:   0: TAG 37! f6  96  c9! d8  c7! 56  59! f4  e4  0b! 98  c6! c9! 29  5c! a6! 05!    !crc
+ + 185646:   0: TAG c7  32  cd  c5  2a  59! 5f  bf! 49! b8  21  4a  cd  c8! 9d! 2d  28!    !crc
+ + 399416:   0: TAG 66! 3b  0d    
+ +   1008:   0: TAG 00!   
+ +    128:   0: TAG 01    
+ +     88:   0: TAG 00!   
+ +  70508:   0: TAG 1c  55  94  55  55  fb! 6c  54! 7a! 15  d5! ea! 3b  7d  05! 6f  e4! 01     !crc
+ +  54300:   0: TAG 14! 69  56!   
+ +    240:   0: TAG 03!   
+ +     48:   0: TAG d8! 61  df  1f  cd! 18! 73  8b! d7! 51! 90  13  81!    !crc
+ +  38566:   0: TAG 01    
+ +   1082:   0: TAG 07    
+ +    168:   0: TAG 3f!   
+ +  17285:   0: TAG 90  d7! 02    
+ +    290:   0: TAG 00!   
+ +    221:   0: TAG a7! b9! c6  89  e7! 34! 9a  fe  a5! 04     !crc
+ +  26872:   0: TAG 62! ab  cc  03!   
+ +    296:   0: TAG 01    
+ +     64:   0: TAG 83! 04    
+ +    752:   0: TAG 45    
+ +  26005:   0: TAG 03!   
+ +   1146:   0: TAG 07    
+ +  40069:   0: TAG 07    
+ +     68:   0: TAG 07    
+ +  18123:   0: TAG 03!   
+ +   1048:   0: TAG 0f!   
+ +  26013:   0: TAG 11  37! cb  4b  8d  f0! 8f  0f! cc  68  89  8c! 52  48  83  33  03!    !crc
+ +  27076:   0: TAG 2b!   
+ +  40176:   0: TAG 4f! 00!   
+ +    904:   0: TAG 00!   
+ +  17631:   0: TAG 01    
+ +     64:   0: TAG 2b!   
+ +     79:   0: TAG 01    
+ +    761:   0: TAG 00!   
+ +     37:   0: TAG f4  04  2d    
+ +  26048:   0: TAG ba  86! 8a! b9! 25! 95! a9  12  92  4d  bd  b9     !crc
+ +  27952:   0: TAG 01    
+ + 102555:   0: TAG 01    
+ +   1008:   0: TAG 1f    
+ + 381069:   0: TAG 22!   
+ +    160:   0: TAG 6a  18! c1  83  b1! f5  44! e9  bd! 19  13! 14! 3d  24  ac     !crc
+ +  74820:   0: TAG 45! ab! cb  d4  c9! 5f! 32! dd! 36  bb! 23  50! b1  b6! 15  35  11!    !crc
+#db# cancelled_a       
+#db# 4 0 0       
+#db# 20 0 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+iso14443a card select failed
+#db# cancelled_a       
+#db# b 0 0       
+#db# 20 6a1 3e       
+#db# cancelled_a       
+#db# b 0 0       
+#db# 20 64f 3e       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 01    
+ +    140:   0: TAG 0e    
+ + 401998:   0: TAG 00!   
+ +   2189:   0: TAG 56  3b    
+ +  23184:   0: TAG 01    
+ +    798:   0: TAG 09!   
+ +    234:   0: TAG 03!   
+ +  13981:   0: TAG 4e  98    
+ +  14111:   0: TAG c4! 9e! 40  d6! 53  85! 84  fb! aa  8d! e8! 61  ca! cb! ea  7b! 06!    !crc
+ +  22525:   0: TAG f1  31  da! 6a  d4  db  68  51  43! 00! 56! 08  cd! 54! 9f! 20! 50  01     !crc
+ +  23871:   0: TAG 7a! da  4f  23  d9! ba  2b! 7f! 02  4d  38  49  9d! 1e! c7  38  34     !crc
+ +  89340:   0: TAG ee! 15    
+ +    976:   0: TAG 05!   
+ +    136:   0: TAG 07    
+ + 378285:   0: TAG bd! fa! 63  e3  84! e3! 9c  12! 64! 02     !crc
+ +  95843:   0: TAG 0d  a8  74  6b  08  01     !crc
+ +    848:   0: TAG 3b  0b! 33! 0a!   
+ +  29903:   0: TAG 00!   
+ +     37:   0: TAG b3! 02    
+ +    117:   0: TAG 01    
+ +   1038:   0: TAG 01    
+ +  13645:   0: TAG 08    
+ +     88:   0: TAG dc  e6! b4  ca! 37  98  19  48  de! ea  6e  04  9a! 73  c3! cb  05!    !crc
+ +  22502:   0: TAG 57! 03!   
+ +   1250:   0: TAG 03!   
+ +  22124:   0: TAG 02    
+ +    112:   0: TAG 01    
+ +     56:   0: TAG 89! 49  51  8f  7a  52! 97! 69  7e  6a  85! 8f! a4! be  12!    !crc
+ +  38326:   0: TAG 01    
+ +    242:   0: TAG 0f!   
+ +  21268:   0: TAG a5! c9  72  63! dd  c3! a3  d2  c8! 30  02! 9e  94  a3! 19  88! 69  03!    !crc
+ +  54020:   0: TAG d7  0f  51! d4! 36! f1  f0! d4  4c  b1! 88  68  8e! 4a! af! fb! 0b! 02     !crc
+ +  40199:   0: TAG 3f!   
+ +  17965:   0: TAG 02    
+ +     64:   0: TAG 54! 64  3a    
+ +    256:   0: TAG 01    
+ +     80:   0: TAG 47  a8! c4! de  c4  35! b6  2d! 33! f3! 2f! 0f!    !crc
+ +  26389:   0: TAG a9  5a  9d  79! be  36! 56! 0e! 05  7e  59! 96! 01     !crc
+ +    971:   0: TAG 00!   
+ +     85:   0: TAG 01    
+ +  25607:   0: TAG 01    
+ +     72:   0: TAG a9  d5  ad! 13    
+ +    296:   0: TAG 01    
+ +     56:   0: TAG 03!   
+ +    176:   0: TAG 2b! fc  04! 84  c5! 4b  03! 09! dd  03!    !crc
+ +  39933:   0: TAG 87! 02    
+ +    258:   0: TAG 03!   
+ +   1000:   0: TAG 7f    
+ +  16557:   0: TAG 07    
+ +    224:   0: TAG 01    
+ +     56:   0: TAG 7d! 64  fb! 76  69  56! d7  a7  18! 29  4c  bb  04     !crc
+ + 493808:   0: TAG 27! 85  05! 18  e5! ac! 46  b8! d4  cb  a8     !crc
+ +    880:   0: TAG 01    
+ +  59269:   0: TAG 3e    
+ +   1056:   0: TAG a1  f2! ab  1c    
+ +  17959:   0: TAG 27!   
+ +    320:   0: TAG 67! a1  d4  88  d0! 1b! 2c! 13  94  6f! de  f5  0a!    !crc
+ +  53356:   0: TAG 09!   
+ +    168:   0: TAG 99  68  ab  58! 40  8c! 7d! 5f  40  b1! 8d! 51  21  93  64     !crc
+ +  39687:   0: TAG 03!   
+ +    798:   0: TAG 11!   
+ +    250:   0: TAG 01    
+ +  17637:   0: TAG 28  2d  e3! 1e  25  56! 9b  6e  54  e3  ad! a1! e1  6a  09  53  06!    !crc
+ +  26940:   0: TAG 26! db! b0  38  05!   
+ +  26336:   0: TAG b2  29  c2  bf! 43  27! b2  40! 34  26! a4  cc  2e  4b  09! 30! 33!    !crc
+ +  59444:   0: TAG 4e! ce  d2! 25! b5! 82! a1! 31  12! 0d! 76  31  21  6a! cf! 59! 00!    !crc
+ +  27005:   0: TAG 0a!   
+ +    136:   0: TAG 5f  bc  5c! bd! de  4f  2d  d3  cf! b1! 5a  33! df! 8a  d8  10     !crc
+ +  26447:   0: TAG 97  24! d8  e2  df  d1! 5a  56! ac  5b! d5! 94! a4! 96  70! 1e! 1c     !crc
+ +  38149:   0: TAG 66  15! 30! 00!   
+ +   1096:   0: TAG a4! fc  06!   
+ +  17847:   0: TAG b4! 2b! f3! 04    
+ +    304:   0: TAG e4  cc! 9f  62  59! 09! af  ae! 06! bc  eb!    !crc
+ +  27101:   0: TAG 68! 6f  f3! f1! 07    
+ +  99219:   0: TAG 01    
+ +    104:   0: TAG c3! a4  b8  27! 4d! a9  3a! bc  ba! 3a! 1e!    !crc
+ + 412223:   0: TAG 01    
+ +    790:   0: TAG a0! d2  fd! 1a    
+ +  36611:   0: TAG 00!   
+ +     52:   0: TAG 03!   
+ +    240:   0: TAG 01    
+ +    152:   0: TAG 72  f6  76! 78! b7  50  80! 00!    !crc
+ +    592:   0: TAG 01    
+ +     54:   0: TAG 3e!   
+ +  28015:   0: TAG 04    
+ +    247:   0: TAG 04! f6  06! c1! b6  35! d7  f6  b8! f7  fd! 4b  b0!    !crc
+ +  68220:   0: TAG 68  22!   
+ +   1016:   0: TAG 07    
+ +     72:   0: TAG fb  01    
+ +  44724:   0: TAG eb  64  23! 56! ed! 1e  19! db! 94! e4  28  56! 3a  21  1b!    !crc
+ +  67444:   0: TAG f0  f5  06!   
+ +   1128:   0: TAG 09! 01    
+ +  17942:   0: TAG 57    
+ +  26678:   0: TAG 01    
+ +     64:   0: TAG 90! 84  8a! 7b  b4! 48  46  be! 81  47  bd! 88  43  ce  99  02     !crc
+ +   1124:   0: TAG 03!   
+ +  26388:   0: TAG 00!   
+ +     52:   0: TAG 01    
+ +  40176:   0: TAG 47    
+ +    152:   0: TAG a9! 18!   
+ +    904:   0: TAG 11!   
+ +    200:   0: TAG 07    
+ +  44708:   0: TAG a6! 56  c5! 01    
+ +    552:   0: TAG 01    
+ +     72:   0: TAG d7  cf  8b! 71! 94! 4c  80! 6e  0a!    !crc
+ +  27246:   0: TAG 2d!   
+ +   1121:   0: TAG 00!   
+ +     80:   0: TAG 00!   
+ + 105553:   0: TAG 34    
+ +    944:   0: TAG 9b  40    
+ + 392748:   0: TAG 05!   
+ +  51248:   0: TAG 09! 42! 6e  4a! 66  de! 59! fa  c5! 30  06! 00!    !crc
+ +  66884:   0: TAG 78! 0f!   
+ +    976:   0: TAG 05!   
+ +     56:   0: TAG 0f!   
+ +  18791:   0: TAG 03!   
+ +  26421:   0: TAG 13    
+ +    112:   0: TAG 38! 1a  ed  68! 92  73  0d  c1  63! 0f! f9! 39! f5! e3! c3! 5f     !crc
+#db# cancelled_a       
+#db# 4 0 0       
+#db# 20 215 26       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 02    
+ + 620942:    :     26    
+ + 305120:    :     26    
+ + 303418:    :     26    
+ + 317817:    :     26    
+ + 621233:    :     26    
+ +  12910:   0: TAG 02    
+ + 594757:    :     26    
+ +1534021:    :     26    
+ +    102:   0: TAG ff    
+ +   7586:    :     93  20    
+ +  10768:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ +    118:   0: TAG 03!   
+ +  24808:   0: TAG 03!   
+ +   7772:   0: TAG 01    
+ +2025258:    :     26    
+ + 303402:    :     26    
+ + 304289:    :     26    
+ + 317069:   0: TAG ff    
+ +   7588:    :     93  20    
+ +    146:   0: TAG 00!   
+ +  10716:   0: TAG 01    
+ +  24760:   0: TAG ff  01    
+ +   7602:    :     93  20    
+ +    219:   0: TAG 1a  f6    
+ +2025383:   0: TAG 1f    
+ + 607647:   0: TAG 1f    
+ +   7885:   0: TAG c1    
+ +  15137:    :     e0  81  b8  62    
+ +  20211:   0: TAG 1f    
+ +   7606:    :     93  20    
+ +1720378:    :     26    
+ + 305229:   0: TAG ff    
+ +  18348:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ +     99:   0: TAG 03!   
+ +    100:   0: TAG 01    
+ +     42:   0: TAG 01    
+ +   4506:   0: TAG 01    
+ +  20146:   0: TAG ff!   
+ +   7730:   0: TAG 00!   
+ +  20092:   0: TAG 06!   
+ + 978074:    :     52    
+ +   7842:   0: TAG fb! 94! 27! dc! 01    
+ + 123514:    :     52    
+ +    134:   0: TAG 0f!   
+ +   7732:   0: TAG fb! 04    
+ +    280:   0: TAG 03!   
+ + 104810:    :     30  00  02  a8    
+ + 133660:    :     26    
+ +1228924:    :     26    
+#db# COMMAND FINISHED       
+#db# 5 0 1       
+#db# 20 bc1 26       
+#db# 5 0 1       
+#db# 20 bc1 26       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 02    
+ + 595522:    :     26    
+ + 622099:    :     26    
+ + 329665:    :     26    
+ + 344091:    :     26    
+ + 368611:    :     26    
+ +2222249:    :     26    
+ + 995931:   0: TAG 07    
+ +   7812:   0: TAG 4a    
+ +  10704:   0: TAG 56  3b    
+ + 981700:   0: TAG 01    
+ +    280:   0: TAG 03!   
+ +  10436:   0: TAG 07    
+ + 120648:   0: TAG fb! 94! 27! 04    
+ +  10776:   0: TAG 56  3b    
+ + 122532:   0: TAG 1e!   
+ +  10568:   0: TAG ea  07    
+ + 131280:   0: TAG 03!   
+ +     44:   0: TAG ad  77!   
+ + 113680:   0: TAG 1f    
+ +   7780:   0: TAG fb! 94! 27! 04    
+ +  10848:   0: TAG 1d!   
+ + 216030:    :     26    
+ +1242460:    :     26    
+ + 321974:   0: TAG 01    
+ +  24800:   0: TAG 3f!   
+ +1093148:    :     26    
+ + 305129:    :     26    
+ + 303401:    :     26    
+ + 304272:    :     26    
+ + 304234:    :     26    
+ +    133:   0: TAG 1f    
+ +  43201:   0: TAG 0f!   
+ +   7595:    :     93  20    
+ +    169:   0: TAG 03!   
+ +     70:   0: TAG 01    
+ +  10628:   0: TAG 07    
+ + 974738:    :     52    
+ +    102:   0: TAG 03!   
+ +   8044:   0: TAG 03!   
+ +  10512:   0: TAG 56!   
+ + 120564:   0: TAG 01    
+ +     96:   0: TAG 02    
+ +  10704:   0: TAG 16    
+ + 114394:    :     52    
+ +   7874:   0: TAG fb! 14!   
+ +    144:   0: TAG 27!   
+ +    104:   0: TAG 01    
+ +     40:   0: TAG 01    
+ + 224069:    :     26    
+ + 317801:    :     26    
+ + 607775:   0: TAG 01    
+ +   7846:   0: TAG 01    
+ +  15142:    :     e0  81  b8  62    
+ +  20237:   0: TAG ff  0f!   
+ +   7604:    :     93  20    
+ +    280:   0: TAG 03!   
+ +  10472:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ + 982548:    :     93  20    
+ + 150874:   0: TAG 01    
+ +   7756:   0: TAG fb! 14!   
+ + 132220:   0: TAG fb! 14!   
+ + 473642:   0: TAG 03!   
+ + 134274:   0: TAG 00!   
+ +  10472:   0: TAG 0f!   
+ +  93552:    :     30  00  02  a8    
+ +  20181:   0: TAG ff  07    
+ +   7636:    :     93  20    
+ +  10859:   0: TAG 07    
+ +    156:   0: TAG 00!   
+ +  93404:    :     30  00  02  a8    
+ + 438741:    :     26    
+ + 617065:    :     93  20    
+ +    378:   0: TAG 3d    
+ +  10484:   0: TAG 03!   
+ +    164:   0: TAG 01    
+ +1024662:    :     93  20    
+ +  10884:   0: TAG 07    
+ + 112767:    :     52    
+ +    101:   0: TAG 01    
+ + 282894:   0: TAG 0f!   
+ + 132212:   0: TAG 07    
+ +     52:   0: TAG ad  17!   
+ + 264521:   0: TAG 56  0b    
+ + 378024:   0: TAG 01    
+ + 132196:   0: TAG 01    
+ + 133807:    :     52    
+ + 536544:    :     26    
+ + 607602:    :     26    
+ + 608671:   0: TAG 01    
+ +   7715:   0: TAG 03!   
+ +  43252:   0: TAG 01    
+ +     69:   0: TAG 07    
+ +  13123:   0: TAG 07    
+ + 971354:    :     52    
+ +    142:   0: TAG 03!   
+ +   7724:   0: TAG fb! 04    
+ +    280:   0: TAG 03!   
+ + 131084:   0: TAG fb! 04    
+ +  10800:   0: TAG 16    
+ + 121460:   0: TAG 07    
+ +  10744:   0: TAG 16    
+ + 114510:   0: TAG 1f    
+ +  18522:   0: TAG 01    
+ + 112842:   0: TAG 07    
+ +  18566:   0: TAG 16    
+ + 113644:   0: TAG 03!   
+ +  19408:   0: TAG 00!   
+ +     76:   0: TAG 01    
+ + 113570:   0: TAG ff  0f!   
+ +   7908:   0: TAG 13  ee    
+ +  10622:   0: TAG 01    
+ + 112834:   0: TAG 03!   
+ + 132212:   0: TAG 01    
+ +  18512:   0: TAG 01    
+ + 378147:   0: TAG ff  07    
+ +   7891:   0: TAG 4f  b8  03!   
+ +  10604:   0: TAG 07    
+ +    142:   0: TAG 1d!   
+ + 114307:    :     52    
+ +    100:   0: TAG 07    
+ +  18623:   0: TAG 00!   
+ +     37:   0: TAG 01    
+ + 113575:   0: TAG 03!   
+ +   7869:   0: TAG 07    
+ +    104:   0: TAG 01    
+ +  10491:   0: TAG 01    
+ + 245081:   0: TAG 03!   
+ +     42:   0: TAG 80!   
+ + 112869:    :     30  00  02  a8    
+ +  28097:   0: TAG 01    
+ +  10580:   0: TAG 0f!   
+ +1535129:   0: TAG 07    
+ +  10738:   0: TAG 56  03!   
+ + 974776:   0: TAG 1f    
+ +   7900:   0: TAG 4f  18!   
+ +  10604:   0: TAG 03!   
+ + 120920:   0: TAG 03!   
+ +  10452:   0: TAG 03!   
+ + 121520:   0: TAG 4f    
+ +  10736:   0: TAG 56!   
+ + 113570:    :     52    
+ +    102:   0: TAG 0f!   
+ +   7764:   0: TAG 03!   
+ +     48:   0: TAG 07    
+ +     96:   0: TAG 07    
+ +    104:   0: TAG 01    
+ +     40:   0: TAG 01    
+ +  10504:   0: TAG 56  3b    
+ + 122268:   0: TAG fb! 04    
+ +  10792:   0: TAG 56!   
+ + 252784:   0: TAG 7e! 01    
+ +  10776:   0: TAG 56!   
+ + 122532:   0: TAG 3d    
+ + 131232:   0: TAG 00!   
+ +  10600:   0: TAG 07    
+ + 121504:   0: TAG 01    
+ +    144:   0: TAG 27!   
+ +  10896:   0: TAG 16    
+ +  94073:    :     30  00  02  a8    
+ + 437893:    :     26    
+ + 607698:    :     26    
+ +  43316:   0: TAG 03!   
+ +   7782:   0: TAG 07    
+ +    104:   0: TAG 03!   
+ +     96:   0: TAG 01    
+ +  10530:   0: TAG 16    
+ + 993280:   0: TAG 03!   
+ + 121496:   0: TAG 02    
+ +  10760:   0: TAG 56  0b    
+ + 245868:   0: TAG 1f    
+ +  18636:   0: TAG 05!   
+ + 120500:   0: TAG fb! 14!   
+ +  10800:   0: TAG 56  0b    
+ + 113672:   0: TAG 01    
+ +   7740:   0: TAG fb! 94    
+ +  10792:   0: TAG 56  0b    
+ + 121604:   0: TAG 00!   
+ + 132044:   0: TAG 3e    
+ +    108:   0: TAG 01    
+ +  10616:   0: TAG 07    
+ + 133088:   0: TAG 56  0b    
+ + 131380:   0: TAG 56  0b    
+ + 113670:   0: TAG 07    
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+#db# cancelled_a       
+#db# 6 0 0       
+#db# 20 1d6 93       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 16    
+ +  32560:   0: TAG 4f  b8  03!   
+ + 992424:   0: TAG 02    
+ + 124276:    :     52    
+ + 132220:    :     52    
+ +   7883:   0: TAG 00!   
+ +     45:   0: TAG 0f!   
+ +  10667:   0: TAG 03!   
+ +    165:   0: TAG 03!   
+ +  94194:    :     30  00  02  a8    
+ +  27826:    :     93  20    
+ +     99:   0: TAG 01    
+ +    221:   0: TAG e0  0f!   
+ + 123324:    :     52    
+ +    101:   0: TAG 01    
+ +  18487:   0: TAG 07    
+ + 113624:    :     52    
+ + 132205:    :     52    
+ +  18642:   0: TAG 01    
+ + 132157:   0: TAG 03!   
+ +  93651:   0: TAG 01    
+ +  38577:   0: TAG 07    
+ +    116:   0: TAG 02    
+ +     43:   0: TAG 08    
+ +  93468:   0: TAG 01    
+ +  20082:   0: TAG 07    
+ + 132960:    :     52    
+ +  18727:   0: TAG 01    
+ + 112736:   0: TAG 0f!   
+ +   7646:    :     93  20    
+ + 124500:    :     52    
+ +    108:   0: TAG 01    
+ +   7604:    :     93  20    
+ +    146:   0: TAG 00!   
+ +     76:   0: TAG 01    
+ +     92:   0: TAG 00!   
+ +  10608:   0: TAG 56!   
+ + 113554:    :     52    
+ +    166:   0: TAG 30!   
+ +  18432:   0: TAG 07    
+ + 113622:    :     52    
+ +    134:   0: TAG 01    
+ +   7658:    :     93  20    
+ +    226:   0: TAG 02    
+ +  10572:   0: TAG 0f!   
+ +  93648:   0: TAG 01    
+#db# cancelled_a       
+#db# 5 0 0       
+#db# 20 403 30       
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+ +      0:   0: TAG 3f!   
+ +   7594:    :     93  20    
+ +    138:   0: TAG 01    
+ +     40:   0: TAG 07    
+ +     96:   0: TAG 07    
+ +    104:   0: TAG 01    
+ +     40:   0: TAG 01    
+ +  10334:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ +  24853:   0: TAG ff  01    
+ +  18588:   0: TAG 01    
+ + 973777:    :     52    
+ + 131396:    :     52    
+ +    100:   0: TAG 03!   
+ +    102:   0: TAG 02    
+ +   7510:    :     93  20    
+ + 105242:    :     30  00  02  a8    
+ +  20207:   0: TAG 03!   
+ +   7603:    :     93  20    
+ +    240:   0: TAG 00!   
+ + 124252:    :     52    
+ +   8112:   0: TAG 01    
+ +  10477:   0: TAG 03!   
+ + 112874:   0: TAG 01    
+ +     98:   0: TAG 01    
+ +   7523:    :     93  20    
+ + 124468:    :     52    
+ +     91:   0: TAG 07    
+ + 132277:   0: TAG 3f!   
+ +  18495:   0: TAG 01    
+ +  93481:    :     30  00  02  a8    
+ +   7752:    :     50  00  57  cd    
+ +  12445:   0: TAG 07    
+ +   7620:    :     93  20    
+ + 104395:    :     30  00  02  a8    
+ + 121788:    :     26    
+ + 316336:   0: TAG 02    
+ + 595605:    :     26    
+ + 312091:   0: TAG 7b!   
+ +  35484:   0: TAG ff  07    
+ +   7765:   0: TAG 0f!   
+ +    130:   0: TAG 01    
+ + 965203:    :     30  00  02  a8    
+ +  27832:    :     93  20    
+ +    266:   0: TAG 4f  b8  03!   
+ + 110882:    :     50  00  57  cd    
+ +  12598:   0: TAG ff  07    
+ +   7864:   0: TAG 00!   
+ + 124230:    :     52    
+ +    102:   0: TAG 03!   
+ +   7924:   0: TAG 07    
+ +    104:   0: TAG 01    
+ +  10529:   0: TAG 02    
+ +     71:   0: TAG 3b    
+ + 114348:    :     52    
+ +    100:   0: TAG 03!   
+ +   7756:   0: TAG fb! 04    
+ +  10632:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ +    232:   0: TAG 3b    
+ + 112644:    :     52    
+ +    202:   0: TAG 00!   
+ +   7526:    :     93  20    
+ +  10859:   0: TAG 0f!   
+ +     62:   0: TAG 56!   
+ + 113671:   0: TAG ff  07    
+ + 133060:   0: TAG 07    
+ + 131349:   0: TAG ff  07    
+ +  18630:   0: TAG 00!   
+ +  93401:    :     30  00  02  a8    
+ +  20187:   0: TAG 0f!   
+ +   7622:    :     93  20    
+ +    239:   0: TAG 7d! c1! 1e!   
+ + 132372:   0: TAG 07    
+ +  10608:   0: TAG 00!   
+ + 132920:   0: TAG 03!   
+ + 120636:   0: TAG 00!   
+ +     45:   0: TAG 0f!   
+ +  10592:    :     93  70  ca  fd  ca  13  ee  8e  ea    
+ +     99:   0: TAG 07    
+ +  93627:   0: TAG 01    
+ +   7486:    :     50  00  57  cd    
+ + 133076:    :     50  00  57  cd    
+ +  12587:   0: TAG 07    
+ +     52:   0: TAG 80    
+ + 111232:   0: TAG 01    
+ +   7485:    :     50  00  57  cd    
+ +  31145:   0: TAG 56  3b    
+ + 113670:   0: TAG 07    
+ +   8014:   0: TAG 01    
+ +  10510:   0: TAG 01    
+ + 114422:    :     52    
+ +    100:   0: TAG 03!   
+ +    102:   0: TAG 02    
+ +   7550:    :     93  20    
+ +  10906:   0: TAG 16    
+ +  93473:    :     30  00  02  a8    
+#db# Measuring HF antenna, press button to exit       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# cancelled       
+#db# Measuring HF antenna, press button to exit       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# 1836 mV       
+#db# cancelled       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+list             List ISO 14443a history
+reader           Act like an ISO14443 Type A reader
+sim              <UID> -- Fake ISO 14443a tag
+snoop            Eavesdrop ISO 14443 Type A
+recorded activity:
+ ETU     :rssi: who bytes
+---------+----+----+-----------
+help             This help
+dbg              Set default debug mode
+rdbl             Read MIFARE classic block
+rdsc             Read MIFARE classic sector
+dump1k           Dump MIFARE classic tag to binary file
+restore1k        Restore MIFARE classic binary file to BLANK tag
+wrbl             Write MIFARE classic block
+chk              Test block up to 8 keys
+mifare           Read parity error messages. param - <used card nonce>
+nested           Test nested authentication
+sim              Simulate MIFARE 1k card
+eclr             Clear simulator memory block
+eget             Get simulator memory block
+eset             Set simulator memory block
+eload            Load from file emul dump
+esave            Save to file emul dump
+ecfill           Fill simulator memory with help of keys from simulator
+ekeyprn          Print keys from simulator memory
+Usage:  hf mf rdbl    <block number> <key A/B> <key (12 hex symbols)>
+        sample: hf mf rdbl 0 A FFFFFFFFFFFF 
+Usage:  hf mf rdsc    <sector number> <key A/B> <key (12 hex symbols)>
+        sample: hf mf rdsc 0 A FFFFFFFFFFFF 
+help             This help
+demod            Demodulate ISO14443 Type B from tag
+list             List ISO 14443 history
+read             Read HF tag (ISO 14443)
+sim              Fake ISO 14443 tag
+simlisten        Get HF samples as fake tag
+snoop            Eavesdrop ISO 14443
+sri512read       <int> -- Read contents of a SRI512 tag
+srix4kread       <int> -- Read contents of a SRIX4K tag
+recorded activity:
+ time  :rssi: who bytes
+---------+----+----+-----------
+recorded activity:
+ time  :rssi: who bytes
+---------+----+----+-----------
+help             This help
+demod            Demodulate ISO15693 from tag
+read             Read HF tag (ISO 15693)
+record           Record Samples (ISO 15693)
+reader           Act like an ISO15693 reader
+sim              Fake an ISO15693 tag
+cmd              Send direct commands to ISO15693 tag
+findafi          Brute force AFI of an ISO15693 tag
+dumpmemory       Read all memory pages of an ISO15693 tag
+No Tag found.
+No Tag found.
+No Tag found.
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+decode           Display deobfuscated and decoded LEGIC RF tag data (use after hf legic reader)
+reader           [offset [length]] -- read bytes from a LEGIC card
+save             <filename> [<length>] -- Store samples
+load             <filename> -- Restore samples
+sim              [phase drift [frame drift [req/resp drift]]] Start tag simulator (use after load or read)
+write            <offset> <length> -- Write sample buffer (user after load or read)
+fill             <offset> <length> <value> -- Fill/Write tag with constant value
+help             This help
+decode           Display deobfuscated and decoded LEGIC RF tag data (use after hf legic reader)
+reader           [offset [length]] -- read bytes from a LEGIC card
+save             <filename> [<length>] -- Store samples
+load             <filename> -- Restore samples
+sim              [phase drift [frame drift [req/resp drift]]] Start tag simulator (use after load or read)
+write            <offset> <length> -- Write sample buffer (user after load or read)
+fill             <offset> <length> <value> -- Fill/Write tag with constant value
+#db# setting up legic card       
+#db# Unknown card format: 26       
+#db# setting up legic card       
+#db# Unknown card format: 26       
+#db# setting up legic card       
+#db# Unknown card format: 26       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+#db# Stand-alone mode! No PC necessary.       
+#db# Starting recording       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+em4x             { EM4X RFIDs... }
+flexdemod        Demodulate samples for FlexPass
+hid              { HID RFIDs... }
+indalademod      ['224'] -- Demodulate samples for Indala 64 bit UID (option '224' for 224 bit)
+ti               { TI RFIDs... }
+vchdemod         ['clone'] -- Demodulate samples for VeriChip
+help             This help
+demod            Demodulate HID Prox Card II (not optimal)
+too short; need at least 4800 samples
+help             This help
+em4x             { EM4X RFIDs... }
+flexdemod        Demodulate samples for FlexPass
+hid              { HID RFIDs... }
+indalademod      ['224'] -- Demodulate samples for Indala 64 bit UID (option '224' for 224 bit)
+ti               { TI RFIDs... }
+vchdemod         ['clone'] -- Demodulate samples for VeriChip
+#db# TAG ID: 240003ec5cc4 (11874)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 4008420042a80df (16495)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2004b407ac (982)       
+#db# buffer samples: 8f 9d 7f 66 8f 9d 7f 66 ...       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+amp              Amplify peaks
+askdemod         <0|1> -- Attempt to demodulate simple ASK tags
+autocorr         <window length> -- Autocorrelation over window
+bitsamples       Get raw samples as bitstring
+bitstream        [clock rate] -- Convert waveform into a bitstream
+buffclear        Clear sample buffer and graph window
+dec              Decimate samples
+detectclock      Detect clock rate
+fskdemod         Demodulate graph window as a HID FSK
+grid             <x> <y> -- overlay grid on graph window, use zero value to turn off either
+hexsamples       <blocks> [<offset>] -- Dump big buffer as hex bytes
+hide             Hide graph window
+hpf              Remove DC offset from trace
+load             <filename> -- Load trace (to graph window
+ltrim            <samples> -- Trim samples from left of trace
+mandemod         [i] [clock rate] -- Manchester demodulate binary stream (option 'i' to invert output)
+manmod           [clock rate] -- Manchester modulate a binary stream
+norm             Normalize max/min to +/-500
+plot             Show graph window
+samples          [128 - 16000] -- Get raw samples for graph window
+save             <filename> -- Save trace (from graph window)
+scale            <int> -- Set cursor display scale
+threshold        <threshold> -- Maximize/minimize every value in the graph window depending on threshold
+zerocrossings    Count time between zero-crossings
+Reading 128 samples
+
+Done!
+
+#db# buffer samples: ab 9d ab 9d ab 9d ab 9d ...       
+Reading 128 samples
+
+Done!
+
+#db# buffer samples: 9f ab 7f ab 9f ab 7d ab ...       
+Reading 128 samples
+
+Done!
+
+#db# buffer samples: 9f ad 9f ad a1 ad 9f ad ...       
+Reading 128 samples
+
+Done!
+
+#db# Stopped       
+#db# buffer samples: af 9f ad 8f 8d 77 6d 66 ...       
+Reading 128 samples
+
+Done!
+
+#db# Stopped       
+#db# TAG ID: 000000004 (2)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+#db# Stopped       
+#db# buffer samples: ab 9f ab 8d ab 9f ab 8d ...       
+Reading 128 samples
+
+Done!
+
+unrecognized command 39206661       
+
+#db# buffer samples: af 9f af 9f af 9f af 9f ...       
+Reading 128 samples
+
+Done!
+
+#db# Stopped       
+#db# buffer samples: 9f af a1 9d 76 6f 5f 5f ...       
+Reading 512 samples
+
+Done!
+
+#db# buffer samples: 9f ab 8d ab 9f ab 8d ab ...       
+Reading 512 samples
+
+Done!
+
+#db# buffer samples: ad 9f ad 9f ad 9f ad 9f ...       
+Reading 2000 samples
+
+Done!
+
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Error: too many detection errors, aborting.
+#db# buffer samples: a1 9f 7f 6d 66 5f 50 5f ...       
+Reading 2000 samples
+
+Done!
+
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Unsynchronized, resync...
+(too many of those messages mean the stream is not Manchester encoded)
+Manchester decoded bitstream
+#db# buffer samples: ad 9f ad 9f ad 9f ad 7f ...       
+Reading 2000 samples
+
+Done!
+
+#db# buffer samples: 9f af 9f ad 9f ad 9f ad ...       
+Reading 2000 samples
+
+Done!
+
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Warning: Manchester decode error for pulse width detection.
+(too many of those messages mean either the stream is not Manchester encoded, or clock is wrong)
+Error: too many detection errors, aborting.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 40.69 V @   125.00 kHz
+# LF antenna: 40.95 V @   134.00 kHz
+# LF optimal: 60.42 V @   142.86 kHz
+# HF antenna: 12.76 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 35.05 V @   125.00 kHz
+# LF antenna: 38.53 V @   134.00 kHz
+# LF optimal: 61.90 V @   144.58 kHz
+# HF antenna: 12.86 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 40.28 V @   125.00 kHz
+# LF antenna: 42.96 V @   134.00 kHz
+# LF optimal: 62.98 V @   142.86 kHz
+# HF antenna: 12.86 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 42.97 V @   125.00 kHz
+# LF antenna: 34.37 V @   134.00 kHz
+# LF optimal: 63.24 V @   141.18 kHz
+# HF antenna: 12.76 V @    13.56 MHz
+#db# TAG ID: 200520026c (310)       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# Stopped       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  9.53 V @   125.00 kHz
+# LF antenna: 35.85 V @   134.00 kHz
+# LF optimal: 63.51 V @   116.50 kHz
+# HF antenna: 12.28 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 35.31 V @   125.00 kHz
+# LF antenna:  3.48 V @   134.00 kHz
+# LF optimal: 60.83 V @   134.83 kHz
+# HF antenna: 12.50 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 35.17 V @   125.00 kHz
+# LF antenna:  3.48 V @   134.00 kHz
+# LF optimal: 60.83 V @   134.83 kHz
+# HF antenna: 12.50 V @    13.56 MHz
+#db# TAG ID: 200520026c (310)       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# TAG ID: 0000001ac (214)       
+#db# TAG ID: 2004b407ac (982)       
+help             This help
+amp              Amplify peaks
+askdemod         <0|1> -- Attempt to demodulate simple ASK tags
+autocorr         <window length> -- Autocorrelation over window
+bitsamples       Get raw samples as bitstring
+bitstream        [clock rate] -- Convert waveform into a bitstream
+buffclear        Clear sample buffer and graph window
+dec              Decimate samples
+detectclock      Detect clock rate
+fskdemod         Demodulate graph window as a HID FSK
+grid             <x> <y> -- overlay grid on graph window, use zero value to turn off either
+hexsamples       <blocks> [<offset>] -- Dump big buffer as hex bytes
+hide             Hide graph window
+hpf              Remove DC offset from trace
+load             <filename> -- Load trace (to graph window
+ltrim            <samples> -- Trim samples from left of trace
+mandemod         [i] [clock rate] -- Manchester demodulate binary stream (option 'i' to invert output)
+manmod           [clock rate] -- Manchester modulate a binary stream
+norm             Normalize max/min to +/-500
+plot             Show graph window
+samples          [128 - 16000] -- Get raw samples for graph window
+save             <filename> -- Save trace (from graph window)
+scale            <int> -- Set cursor display scale
+threshold        <threshold> -- Maximize/minimize every value in the graph window depending on threshold
+zerocrossings    Count time between zero-crossings
+help             This help
+detectreader     ['l'|'h'] -- Detect external reader field (option 'l' or 'h' to limit to LF or HF)
+fpgaoff          Set FPGA off
+lcd              <HEX command> <count> -- Send command/data to LCD
+lcdreset         Hardware reset LCD
+readmem          [address] -- Read memory at decimal address from flash
+reset            Reset the Proxmark3
+setlfdivisor     <19 - 255> -- Drive LF antenna at 12Mhz/(divisor+1)
+setmux           <loraw|hiraw|lopkd|hipkd> -- Set the ADC mux to a specific value
+tune             Measure antenna tuning
+version          Show version inforation about the connected Proxmark
+help             This help
+cmdread          <off period> <'0' period> <'1' period> <command> ['h'] -- Modulate LF reader field to send command before read (all periods in microseconds) (option 'h' for 134)
+em4x             { EM4X RFIDs... }
+flexdemod        Demodulate samples for FlexPass
+hid              { HID RFIDs... }
+indalademod      ['224'] -- Demodulate samples for Indala 64 bit UID (option '224' for 224 bit)
+read             ['h'] -- Read 125/134 kHz LF ID-only tag (option 'h' for 134)
+sim              [GAP] -- Simulate LF tag from buffer with optional GAP (in microseconds)
+simbidir         Simulate LF tag (with bidirectional data transmission between reader and tag)
+simman           <Clock> <Bitstream> [GAP] Simulate arbitrary Manchester LF tag
+ti               { TI RFIDs... }
+vchdemod         ['clone'] -- Demodulate samples for VeriChip
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 37.86 V @   125.00 kHz
+# LF antenna: 64.72 V @   134.00 kHz
+# LF optimal: 64.72 V @   133.33 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 37.05 V @   125.00 kHz
+# LF antenna:  0.53 V @   134.00 kHz
+# LF optimal: 58.28 V @   134.83 kHz
+# HF antenna: 12.83 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 36.92 V @   125.00 kHz
+# LF antenna:  0.80 V @   134.00 kHz
+# LF optimal: 58.54 V @   134.83 kHz
+# HF antenna: 12.31 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 36.78 V @   125.00 kHz
+# LF antenna:  0.80 V @   134.00 kHz
+# LF optimal: 58.54 V @   134.83 kHz
+# HF antenna: 12.31 V @    13.56 MHz
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 37.05 V @   125.00 kHz
+# LF antenna: 65.53 V @   134.00 kHz
+# LF optimal: 65.53 V @   133.33 kHz
+# HF antenna: 12.34 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 36.51 V @   125.00 kHz
+# LF antenna: 52.10 V @   134.00 kHz
+# LF optimal: 58.81 V @   131.87 kHz
+# HF antenna: 12.54 V @    13.56 MHz
+#db# TAG ID: 200520026c (310)       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 34.50 V @   125.00 kHz
+# LF antenna: 49.55 V @   134.00 kHz
+# LF optimal: 63.51 V @   130.43 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 19.73 V @   125.00 kHz
+# LF antenna: 40.42 V @   134.00 kHz
+# LF optimal: 64.86 V @   117.65 kHz
+# HF antenna: 12.50 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 19.59 V @   125.00 kHz
+# LF antenna: 40.15 V @   134.00 kHz
+# LF optimal: 65.53 V @   127.66 kHz
+# HF antenna: 12.54 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 21.07 V @   125.00 kHz
+# LF antenna: 40.69 V @   134.00 kHz
+# LF optimal: 63.24 V @   117.65 kHz
+# HF antenna: 12.50 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 51.70 V @   125.00 kHz
+# LF antenna: 27.66 V @   134.00 kHz
+# LF optimal: 61.63 V @   113.21 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# TAG ID: 000000001 (0)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 28.86 V @   125.00 kHz
+# LF antenna: 45.12 V @   134.00 kHz
+# LF optimal: 65.26 V @   129.03 kHz
+# HF antenna: 12.44 V @    13.56 MHz
+#db# TAG ID: 00000007f (63)       
+#db# TAG ID: 000000001 (0)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 46.46 V @   125.00 kHz
+# LF antenna: 26.05 V @   134.00 kHz
+# LF optimal: 59.08 V @   122.45 kHz
+# HF antenna: 12.66 V @    13.56 MHz
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Prog: 1D555955, 55665955, 555969A5       
+#db# TAG ID: 2004b407ac (982)       
+#db# Prog: 1D555955, 55659A65, 556A99A5       
+#db# TAG ID: 2004b407ac (982)       
+#db# Prog: 1D555955, 55659A65, 556A99A5       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 40.15 V @   125.00 kHz
+# LF antenna: 22.02 V @   134.00 kHz
+# LF optimal: 59.08 V @   121.21 kHz
+# HF antenna: 10.51 V @    13.56 MHz
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 20052200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+#db# Stopped       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 1000840026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 4002f0008dc (1134)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 000000007 (3)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.71 V @   125.00 kHz
+# LF antenna: 28.87 V @   134.00 kHz
+# LF optimal: 64.59 V @   113.21 kHz
+# HF antenna: 12.47 V @    13.56 MHz
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 400a4004d8 (620)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 0000007ac (982)       
+#db# TAG ID: 00000010c (134)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 8004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 000001fac (4054)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+#db# Stopped       
+#db# Stopped       
+#db# Stopped       
+#db# TAG ID: 200520026c (310)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.44 V @   125.00 kHz
+# LF antenna: 28.73 V @   134.00 kHz
+# LF optimal: 64.72 V @   113.21 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 60.02 V @   125.00 kHz
+# LF antenna: 32.76 V @   134.00 kHz
+# LF optimal: 60.02 V @   125.00 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 100004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 000000018 (12)       
+#db# TAG ID: 2004b407ac (982)       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.71 V @   125.00 kHz
+# LF antenna: 29.00 V @   134.00 kHz
+# LF optimal: 64.45 V @   113.21 kHz
+# HF antenna: 12.18 V @    13.56 MHz
+Reading 2000 samples
+
+Done!
+
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.71 V @   125.00 kHz
+# LF antenna: 28.87 V @   134.00 kHz
+# LF optimal: 64.32 V @   113.21 kHz
+# HF antenna: 12.25 V @    13.56 MHz
+Reading 128 samples
+
+Done!
+
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 46.73 V @   125.00 kHz
+# LF antenna: 24.71 V @   134.00 kHz
+# LF optimal: 64.05 V @   114.29 kHz
+# HF antenna: 10.38 V @    13.56 MHz
+Reading 128 samples
+
+Done!
+
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.37 V @   125.00 kHz
+# LF antenna:  5.24 V @   134.00 kHz
+# LF optimal:  5.50 V @    46.88 kHz
+# HF antenna:  1.77 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is unusable.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.24 V @   125.00 kHz
+# LF antenna:  5.24 V @   134.00 kHz
+# LF optimal:  5.50 V @    46.88 kHz
+# HF antenna:  1.77 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is unusable.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  5.24 V @   125.00 kHz
+# LF antenna:  5.24 V @   134.00 kHz
+# LF optimal:  5.50 V @    46.88 kHz
+# HF antenna:  1.77 V @    13.56 MHz
+# Your LF antenna is marginal.
+# Your HF antenna is unusable.
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.98 V @   125.00 kHz
+# LF antenna: 29.00 V @   134.00 kHz
+# LF optimal: 64.05 V @   113.21 kHz
+# HF antenna: 12.44 V @    13.56 MHz
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 53.84 V @   125.00 kHz
+# LF antenna: 29.00 V @   134.00 kHz
+# LF optimal: 64.05 V @   113.21 kHz
+# HF antenna: 12.44 V @    13.56 MHz
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+iso14443a card select failed
+ATQA : 04 00
+ UID : 8d 7b a4 c6 00 00 00 00 57 bc f6 cd 
+ SAK : 08 [2]
+ SAK : MIFARE CLASSIC 1K
+proprietary non-iso14443a card found, RATS not supported
+iso14443a card select failed
+ATQA : 04 00
+ UID : 5b 7a b9 84 00 00 00 00 57 bc f6 cd 
+ SAK : 08 [2]
+ SAK : MIFARE CLASSIC 1K
+proprietary non-iso14443a card found, RATS not supported
+ATQA : 04 00
+ UID : 8d 7b a4 c6 00 00 00 00 57 bc f6 cd 
+ SAK : 08 [2]
+ SAK : MIFARE CLASSIC 1K
+proprietary non-iso14443a card found, RATS not supported
+iso14443a card select failed
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+help             This help
+demod            Demodulate ISO14443 Type B from tag
+list             List ISO 14443 history
+read             Read HF tag (ISO 14443)
+sim              Fake ISO 14443 tag
+simlisten        Get HF samples as fake tag
+snoop            Eavesdrop ISO 14443
+sri512read       <int> -- Read contents of a SRI512 tag
+srix4kread       <int> -- Read contents of a SRIX4K tag
+#db# 3 0 0       
+help             This help
+demod            Demodulate ISO15693 from tag
+read             Read HF tag (ISO 15693)
+record           Record Samples (ISO 15693)
+reader           Act like an ISO15693 reader
+sim              Fake an ISO15693 tag
+cmd              Send direct commands to ISO15693 tag
+findafi          Brute force AFI of an ISO15693 tag
+dumpmemory       Read all memory pages of an ISO15693 tag
+#db# 0 octets read from IDENTIFY request:       
+#db# 0 octets read from SELECT request:       
+#db# 0 octets read from XXX request:       
+Cloning tag with ID 200520026c
+Cloning tag with ID 200520026c
+#db# DONE!       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 40000005cc4 (11874)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 4801ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 61.36 V @   125.00 kHz
+# LF antenna: 34.78 V @   134.00 kHz
+# LF optimal: 62.17 V @   112.15 kHz
+# HF antenna: 12.70 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 21.48 V @   125.00 kHz
+# LF antenna: 45.79 V @   134.00 kHz
+# LF optimal: 62.84 V @   129.03 kHz
+# HF antenna: 12.50 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 41.49 V @   125.00 kHz
+# LF antenna: 25.78 V @   134.00 kHz
+# LF optimal: 62.04 V @   120.00 kHz
+# HF antenna: 12.34 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 47.13 V @   125.00 kHz
+# LF antenna: 28.06 V @   134.00 kHz
+# LF optimal: 64.86 V @   121.21 kHz
+# HF antenna: 12.38 V @    13.56 MHz
+#db# TAG ID: 200520026c (310)       
+#db# DONE!       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 024b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+#db# DONE!       
+#db# Stopped       
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+unrecognized command 30303030       
+
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 46.33 V @   125.00 kHz
+# LF antenna: 27.66 V @   134.00 kHz
+# LF optimal: 63.92 V @   121.21 kHz
+# HF antenna: 12.47 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 51.29 V @   125.00 kHz
+# LF antenna: 29.54 V @   134.00 kHz
+# LF optimal: 64.05 V @   122.45 kHz
+# HF antenna: 12.41 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 54.65 V @   125.00 kHz
+# LF antenna: 31.82 V @   134.00 kHz
+# LF optimal: 65.39 V @   113.21 kHz
+# HF antenna: 12.34 V @    13.56 MHz
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# TAG ID: 200520026c (310)       
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 14.90 V @   125.00 kHz
+# LF antenna: 40.82 V @   134.00 kHz
+# LF optimal: 65.26 V @   116.50 kHz
+# HF antenna: 12.44 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 48.34 V @   125.00 kHz
+# LF antenna: 28.47 V @   134.00 kHz
+# LF optimal: 59.89 V @   122.45 kHz
+# HF antenna: 12.47 V @    13.56 MHz
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 00000b9c4 (23778)       
+#db# TAG ID: 00000b9c4 (23778)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 00000bcc4 (24162)       
+#db# TAG ID: 000017984 (48322)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# TAG ID: 000001cc4 (3682)       
+#db# TAG ID: 000005cc4 (11874)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 480080200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 00000026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 48.74 V @   125.00 kHz
+# LF antenna: 28.73 V @   134.00 kHz
+# LF optimal: 60.29 V @   122.45 kHz
+# HF antenna: 12.99 V @    13.56 MHz
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 48.20 V @   125.00 kHz
+# LF antenna: 28.47 V @   134.00 kHz
+# LF optimal: 59.75 V @   122.45 kHz
+# HF antenna: 12.96 V @    13.56 MHz
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 63.11 V @   125.00 kHz
+# LF antenna: 27.93 V @   134.00 kHz
+# LF optimal: 63.11 V @   125.00 kHz
+# HF antenna: 12.70 V @    13.56 MHz
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 4004b407ac (982)       
+#db# TAG ID: 4009680fac (2006)       
+#db# TAG ID: 8004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 004b407ac (982)       
+#db# TAG ID: 0000007ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 4004b407ac (982)       
+#db# TAG ID: 8012d01f58 (4012)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 10012d00f58 (1964)       
+#db# TAG ID: 00000ff7f (32703)       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 64.18 V @   125.00 kHz
+# LF antenna: 28.20 V @   134.00 kHz
+# LF optimal: 64.18 V @   125.00 kHz
+# HF antenna: 12.76 V @    13.56 MHz
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000000005 (2)       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 10.74 V @   125.00 kHz
+# LF antenna:  8.06 V @   134.00 kHz
+# LF optimal: 22.16 V @   108.11 kHz
+# HF antenna: 12.66 V @    13.56 MHz
+too short; need at least 4800 samples
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 12003b1738c (47558)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 3b17302400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 9003800ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 4004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 4008b407ac (982)       
+#db# TAG ID: 40096807ac (982)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+#db# TAG ID: 10022004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 008012d03 (38529)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 4004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 400a400520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+Cloning tag with ID 2400ec5cc4
+#db# DONE!       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 10025a004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 4009680f58 (1964)       
+#db# TAG ID: 004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407a407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2d01ea2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 00000000f (7)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 4008b407ac (982)       
+#db# TAG ID: 000000001 (0)       
+#db# Stopped       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000007 (3)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 000000003 (1)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 08012d01c (26638)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# TAG ID: 2004b407ac (982)       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200520026c
+#db# DONE!       
+Cloning tag with ID 200520026c
+#db# DONE!       
+Cloning tag with ID 200520026c
+#db# DONE!       
+#db# Stopped       
+help             This help. Use '<command> help' for details of the following commands:
+
+data             { Plot window / data buffer manipulation... }
+exit             Exit program
+hf               { HF commands... }
+hw               { Hardware commands... }
+lf               { LF commands... }
+quit             Quit program
+help             This help
+14a              { ISO14443A RFIDs... }
+14b              { ISO14443B RFIDs... }
+15               { ISO15693 RFIDs... }
+legic            { LEGIC RFIDs... }
+iclass           { ICLASS RFIDs... }
+mf               { MIFARE RFIDs... }
+tune             Continuously measure HF antenna tuning
+iso14443a card select failed
+iso14443a card select failed
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna:  7.38 V @   125.00 kHz
+# LF antenna: 36.52 V @   134.00 kHz
+# LF optimal: 64.32 V @   126.32 kHz
+# HF antenna: 12.38 V @    13.56 MHz
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 56.40 V @   125.00 kHz
+# LF antenna: 33.30 V @   134.00 kHz
+# LF optimal: 63.51 V @   111.11 kHz
+# HF antenna: 12.57 V @    13.56 MHz
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 0042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# Stopped       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# TAG ID: 40042a80df (16495)       
+#db# Stopped       
+#db# Stopped       
+Cloning tag with ID 200420026c
+#db# DONE!       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 55.73 V @   125.00 kHz
+# LF antenna: 32.90 V @   134.00 kHz
+# LF optimal: 64.45 V @   111.11 kHz
+# HF antenna: 12.44 V @    13.56 MHz
+#db# TAG ID: 100211000df (111)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 100215402a80df (16495)       
+#db# TAG ID: 200082a803ff (511)       
+#db# TAG ID: 100215407ff (1023)       
+#db# TAG ID: 8000815401bf (223)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 40042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 40082a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 40042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# TAG ID: 20042a80df (16495)       
+#db# Stopped       
+Cloning tag with ID 200420026c
+#db# DONE!       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+#db# Measuring antenna characteristics, please wait.       
+
+
+# LF antenna: 55.86 V @   125.00 kHz
+# LF antenna: 32.90 V @   134.00 kHz
+# LF optimal: 64.45 V @   111.11 kHz
+# HF antenna: 12.47 V @    13.56 MHz
+Cloning tag with ID 200420026c
+#db# DONE!       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# TAG ID: 000000002 (1)       
+#db# TAG ID: 9003b17305cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000000024 (18)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 4801d8b988 (23748)       
+#db# TAG ID: 4801d8b984 (23746)       
+#db# TAG ID: 4800ec5cc4 (11874)       
+#db# TAG ID: 4800ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 4800ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 000000001 (0)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 4800ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 000ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# TAG ID: 2400ec5cc4 (11874)       
+#db# Stopped       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# TAG ID: 200520026c (310)       
+#db# Stopped       
+Cloning tag with ID 200420026c
+#db# DONE!       
+Cloning tag with ID 200420026c
+#db# DONE!       
+#db# Stopped       
+Cloning tag with ID 20520026c
+Cloning tag with ID 20520026c
+#db# DONE!       
+Cloning tag with ID 20520026c
+#db# DONE!       

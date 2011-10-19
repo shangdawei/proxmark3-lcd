@@ -1,0 +1,1 @@
+run -ifn fpga.v -ifmt Verilog -ofn fpga.ngc -ofmt NGC -p XC3S250E-4VQ100 -opt_mode Speed -opt_level 1 -ent fpga
