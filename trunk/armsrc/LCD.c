@@ -143,19 +143,33 @@ void LCDSend(unsigned int data)
 void LCDSetXY(unsigned char x, unsigned char y)
 {
 
-	LCDSend(PCASET);			// column start/end ram
-	LCDSend(x);					// Start Column to display to
-	LCDSend(131);				// End Column to display to	
+	if ((LCD_id & 0xFFFFFF) == 0xFFFFFF) //No ID read -> EPSON
+  {
+  	LCDSend(ECASET);			// column start/end ram
+  	LCDSend(x);					// Start Column to display to
+  	LCDSend(131);				// End Column to display to	
 	
-	LCDSend(PPASET);			// page start/end ram
-	LCDSend(y);					// Start Page to display to
-	LCDSend(131);				// End Page to display to
+  	LCDSend(EPASET);			// page start/end ram
+  	LCDSend(y);					// Start Page to display to
+  	LCDSend(131);				// End Page to display to
+  }
+  else {	
+  	LCDSend(PCASET);			// column start/end ram
+  	LCDSend(x);					// Start Column to display to
+  	LCDSend(131);				// End Column to display to	
+	
+  	LCDSend(PPASET);			// page start/end ram
+  	LCDSend(y);					// Start Page to display to
+  	LCDSend(131);				// End Page to display to
+  }	
 }
 
 void LCDSetPixel(unsigned char x, unsigned char y, unsigned char color)
 {
 	LCDSetXY(x,y);				// Set position
-	LCDSend(PRAMWR);			// Now write the pixel to the display
+	if ((LCD_id & 0xFFFFFF) == 0xFFFFFF) //No ID read -> EPSON
+    LCDSend(ERAMWR);			// Now write the pixel to the display
+  else  LCDSend(PRAMWR);			// Now write the pixel to the display
 	LCDSend(color);				// Write the data in the specified Color
 }
 
@@ -166,7 +180,9 @@ void LCDFill (unsigned char xs,unsigned char ys,unsigned char width,unsigned cha
     for (i=0;i < height;i++)	// Number of horizontal lines
     {
 		LCDSetXY(xs,ys+i);		// Goto start of fill area (Top Left)
-		LCDSend(PRAMWR);		// Write to display
+	if ((LCD_id & 0xFFFFFF) == 0xFFFFFF) //No ID read -> EPSON
+    LCDSend(ERAMWR);			// Write to displa
+  else LCDSend(PRAMWR);		// Write to display
 
 		for (j=0;j < width;j++)	// pixels per line
 			LCDSend(color);
@@ -244,16 +260,30 @@ unsigned int xmin, xmax, ymin, ymax;
     ymin = y;
     ymax = y + height;
 
-   	LCDSend(PCASET);			
-	  LCDSend(xmin);
-    LCDSend(xmax);
+	if ((LCD_id & 0xFFFFFF) == 0xFFFFFF) //No ID read -> EPSON
+  {
+  	LCDSend(ECASET);			// column start/end ram
+  	LCDSend(xmin);				// Start Column to display to
+  	LCDSend(xmax);				// End Column to display to	
+	
+  	LCDSend(EPASET);			// page start/end ram
+  	LCDSend(ymin);				// Start Page to display to
+  	LCDSend(ymax);				// End Page to display to
 
-	  LCDSend(PPASET);			
-	  LCDSend(ymin);
-    LCDSend(ymax);
-
+    LCDSend(ERAMWR);
+  }
+  else {	
+  	LCDSend(PCASET);			// column start/end ram
+  	LCDSend(xmin);				// Start Column to display to
+  	LCDSend(xmax);				// End Column to display to	
+	
+  	LCDSend(PPASET);			// page start/end ram
+  	LCDSend(ymin);				// Start Page to display to
+  	LCDSend(ymax);				// End Page to display to
 
     LCDSend(PRAMWR);
+  }	
+
 #ifdef BIT8
 unsigned int j;
     for(j = 0; j < maxPix-1; j++) {
@@ -280,7 +310,68 @@ void LCDInit(void)
 
 	LCDReset();
 
-	if ((LCD_id & 0x298003) == 0x298003) //PHILIPS? 298303 and 298503
+	if ((LCD_id & 0xFFFFFF) == 0xFFFFFF) //No ID read -> EPSON
+	{
+    LCDSend(EDISCTL);  	// display control(EPSON)
+    LCDSend(0x0C);   		// 12 = 1100 - CL dividing ratio [don't divide] switching period 8H (default)
+    LCDSend(0x20);      // (32 + 1) * 4 = 132 lines (of which 130 are visible)
+    LCDSend(0x00);      // Do not invert lines
+	
+    LCDSend(ECOMSCN);  	// common scanning direction(EPSON)
+    LCDSend(0x01);
+    
+    LCDSend(EOSCON);  	// internal oscialltor ON(EPSON)
+	
+    LCDSend(ESLPOUT);  	// sleep out(EPSON)
+    
+    LCDSend(EPWRCTR); 	// power ctrl(EPSON)
+    LCDSend(0x0F);    		//everything on, no external reference resistors
+	
+	  LCDSend(EDISINV);  	// invert display mode(EPSON)
+    
+    LCDSend(EDATCTL);  	// data control(EPSON)
+    LCDSend(0x03);	// inverted orientation; connector up-right
+    LCDSend(0x00);	// RGB arrangement (RGB all rows/cols)
+    LCDSend(0x01);	// 8 bit-color display
+	
+    LCDSend(EVOLCTR);  	// electronic volume, this is the contrast/brightness(EPSON)
+    LCDSend(0x21);   		// volume (contrast) setting - fine tuning, original
+    LCDSend(0x03);   		// internal resistor ratio - coarse adjustment
+	   
+    LCDSend(ENOP);  	  // nop(EPSON)
+    
+    LCDSend(ERGBSET8);//setup color lookup table 
+    LCDSend(0x00);	// 000 RED  
+    LCDSend(0x02);	// 001      
+    LCDSend(0x04);	// 010      
+    LCDSend(0x06);	// 011      
+    LCDSend(0x08);	// 100      
+    LCDSend(0x0a);	// 101      
+    LCDSend(0x0c);	// 110      
+    LCDSend(0x0f);	// 111      
+    LCDSend(0x00);	// 000 GREEN
+    LCDSend(0x02);	// 001      
+    LCDSend(0x04);	// 010      
+    LCDSend(0x06);	// 011      
+    LCDSend(0x08);	// 100      
+    LCDSend(0x0a);	// 101      
+    LCDSend(0x0c);	// 110      
+    LCDSend(0x0f);	// 111      
+    LCDSend(0x00);	//  00 BLUE 
+    LCDSend(0x06);	//  01      
+    LCDSend(0x09);	//  10      
+    LCDSend(0x0f);	//  11      
+      
+
+    LCDSend(EDISON);   	// display on(EPSON)
+	  SpinDelay(100);
+    
+ 	  // clear display
+ 	  LCDSetXY(0,0);
+	  LCDSend(ERAMWR);			// Write to display
+
+  }	
+	else if ((LCD_id & 0x298003) == 0x298003) //PHILIPS? 298303 and 298503
   {
   	LCDSend(PSWRESET);			// software reset
 	  SpinDelay(100);
